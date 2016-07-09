@@ -1,0 +1,138 @@
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    scrollbar-face-color: rgb(100,149,237);
+    font-family:"Lucida Sans Unicode", "Trebuchet MS",Geneva,Arial,Helvetica,sans-serif;
+    background-color: rgb(12,15,18);
+    background-image : url("img/city_lights_montreal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: scroll;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    scrollbar-face-color: rgb(100,149,237);
+    font-family:"Lucida Sans Unicode", "Trebuchet MS",Geneva,Arial,Helvetica,sans-serif;
+    background-image : none;
+    background-color: transparent;
+    font-size:12px;
+    overflow: visible;
+}
+
+div
+{
+    border-color: transparent;
+    border-style: solid;
+    background-color: rgb(50,60,72);
+    font-weight: normal;
+    margin:0px;
+    color: white;
+    overflow: visible;
+}
+
+
+.banner {
+  content: url("img/name-blue-heavy.png") no-repeat;
+}
+
+.main
+{
+    width: 80%;
+    min-width: 300px;
+    min-height: 200px;
+    padding: 10px;
+    border: 3px rgb(100,143,169) outset;
+    border-radius: 10px;
+}
+
+.id
+{
+    width: 130px;
+    height: 130px;
+}
+
+.info
+{
+    float: left;
+}
+
+.publications
+{
+    width: 80%;
+    min-width: 300px;
+    min-height: 100px;
+    padding: 10px;
+    padding-top: 0px;
+    border: 3px rgb(100,143,169) outset;
+    border-radius: 10px;
+}
+
+
+.comic
+{
+    font-family:COMIC SANS MS;
+    border-color: transparent;
+    border-style: solid;
+    background-color: rgb(219,219,219);
+    font-weight: normal;
+    font-size:10px;
+    color: black;
+    overflow: auto;
+    margin: 20px;
+    min-margin: 20px;
+    max-margin: 50px;
+    padding: 5px;
+    border: 2px black solid;
+    float: right;
+    vertical-align:text-bottom;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-transform : uppercase;
+}
+
+img
+{
+    margin: 2px;
+}
+
+a
+{
+    color: rgb(179,222,245);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(88,219,255);
+    text-decoration: none;
+}
+
+a:focus
+{
+    color: rgb(88,219,255);
+    text-decoration: none;
+}
+
+
+h2
+{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.title
+{
+    fon
