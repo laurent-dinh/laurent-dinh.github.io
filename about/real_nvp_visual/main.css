@@ -166,7 +166,7 @@ h2
 
 .imnet32_manifold:hover
 {
-  background: url('real_nvp_fig/imnet32_manifold.webp');
+  background: url('real_nvp_fig/imnet32_manifold.gif');
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -193,7 +193,7 @@ h2
 
 .imnet_manifold:hover
 {
-  background: url('real_nvp_fig/imnet_manifold.webp');
+  background: url('real_nvp_fig/imnet_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -220,7 +220,7 @@ h2
 
 .celeba_manifold:hover
 {
-  background: url('real_nvp_fig/celeba_manifold.webp');
+  background: url('real_nvp_fig/celeba_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -247,7 +247,7 @@ h2
 
 .bedroom_manifold:hover
 {
-  background: url('real_nvp_fig/bedroom_manifold.webp');
+  background: url('real_nvp_fig/bedroom_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -274,7 +274,7 @@ h2
 
 .church_manifold:hover
 {
-  background: url('real_nvp_fig/church_manifold.webp');
+  background: url('real_nvp_fig/church_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -301,7 +301,7 @@ h2
 
 .tower_manifold:hover
 {
-  background: url('real_nvp_fig/tower_manifold.webp');
+  background: url('real_nvp_fig/tower_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;

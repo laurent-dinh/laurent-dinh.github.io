@@ -5,12 +5,37 @@
         <link rel="shortcut icon" href="img/logo.ico"/>
         <title>Laurent Dinh's personal webpage</title>
         <meta name="description" content="PhD student at Univerity of Montréal. Interested in machine learning, deep learning and probabilistic model."> 
-        <meta name="keywords" content="machine learning, deep learning, probabilistic model, technology, mathematics, music">
+        <meta name="keywords" content="machine learning, deep learning, probabilistic model, technology, mathematics">
         <meta name="author" content="Laurent Dinh">
         <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
         <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
-        <link rel="stylesheet" media="screen" type="text/css" title="Style" href="main.css" title="main">
-        <link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" />
+        <script>
+        <!--
+        function getStylesheet() {
+              var currentTime = new Date().getHours();
+              if (0 <= currentTime&&currentTime < 5) {
+               document.write("<link rel='stylesheet' media='screen' type='text/css' title='Style' href='main.css' title='main'>\r\n<link rel='stylesheet' media='screen and (max-width: 600px)' href='small.css'>");
+              }
+              if (5 <= currentTime&&currentTime < 11) {
+               document.write("<link rel='stylesheet' media='screen' type='text/css' title='Style' href='dusk.css' title='main'>\r\n<link rel='stylesheet' media='screen and (max-width: 600px)' href='small_dusk.css'>");
+              }
+              if (11 <= currentTime&&currentTime < 16) {
+               document.write("<link rel='stylesheet' media='screen' type='text/css' title='Style' href='day.css' title='main'>\r\n<link rel='stylesheet' media='screen and (max-width: 600px)' href='small_day.css'>");
+              }
+              if (16 <= currentTime&&currentTime < 22) {
+               document.write("<link rel='stylesheet' media='screen' type='text/css' title='Style' href='dusk.css' title='main'>\r\n<link rel='stylesheet' media='screen and (max-width: 600px)' href='small_dusk.css'>");
+              }
+              if (22 <= currentTime&&currentTime <= 24) {
+               document.write("<link rel='stylesheet' media='screen' type='text/css' title='Style' href='main.css' title='main'>\r\n<link rel='stylesheet' media='screen and (max-width: 600px)' href='small.css'>");
+              }
+        }
+
+        getStylesheet();
+        -->
+        </script>
+        <noscript><link rel="stylesheet" media="screen" type="text/css" title="Style" href="main.css" title="main"></noscript>
+        <!--link rel="stylesheet" media="screen" type="text/css" title="Style" href="main.css" title="main"-->
+        <!--link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" /-->
         <link rel="alternate stylesheet" media="screen" type="text/css" href="fall.css" title="fall">
         <link rel="alternate stylesheet" media="screen" type="text/css" href="paris.css" title="paris">
    </head> 
@@ -26,13 +51,18 @@
                 class = "id"> <br/>
             <a href = "mailto:firstname.lastname@umontreal.ca"
                 title = "E-mail"><img class = "banner"
-                    src = "img/name-blue-heavy.png"
+                    src = "img/empty-name.png"
                     alt = "My name"
                     height = "25"></a>  
             <a href = "http://fr.linkedin.com/pub/laurent-dinh/37/872/b92/en"
                 title = "LinkedIn professional profile"><img
                     class="logo"
                     src = "img/linkedin.png"
+                    height = "25"></a>
+            <a href = "https://twitter.com/laurent_dinh"
+                title = "Twitter profile"><img
+                    class="logo"
+                    src = "img/twitter_logo.png"
                     height = "25"></a>
             <a href="http://deeplearning.net/"
                 title = "Deep Learning webpage"><img
@@ -83,13 +113,13 @@
             Google <a href = "http://deepmind.com/"
                 title = "Google DeepMind official webpage">DeepMind</a>.
             <br/><br/>
-            Was also intern at
-            <a href = "https://research.google.com/" title = "Google Research official webpage">Google Research</a>
+            I was also intern at
+            <a href = "https://research.google.com/teams/brain/" title = "Google Brain official webpage">Google Brain</a>
             under the supervision of
             <a href = "http://bengio.abracadoudou.com/" title = "Samy's official webpage">Samy Bengio</a>.
             <br/><br/>
-            My publications and reports can be found <a href = "http://arxiv.org/find/all/1/au:+Dinh_Laurent/0/1/0/all/0/1"
-                title = "ArXiv search results">here</a>.
+            My publications and reports can be found <a href = "https://scholar.google.ca/citations?user=h7OHSkoAAAAJ"
+                title = "Google Scholar profile">here</a>.
             </p>
     </div>
 
@@ -99,78 +129,72 @@
         <em class = "title"><a
           href = "http://arxiv.org/abs/1605.08803"
           title = "Deep generative model with latent space, tractable log-likelihood, inference and sampling.">
-          Density estimation using Real NVP
-          </a></em>
-          [<a href = "real_nvp_visual/">
-          visualizations
-          </a>]<br/>
-          Laurent Dinh,
+          Density estimation using Real NVP</a></em>&nbsp;[&nbsp;<a href = "real_nvp_visual/">visualizations</a>&nbsp;]<br/>
+          Laurent&nbsp;Dinh,
           <a href = "http://www.sohldickstein.com/">
-              Jascha Sohl-Dickstein</a>,
+              Jascha&nbsp;Sohl-Dickstein</a>,
           <a href = "http://bengio.abracadoudou.com/">
-              Samy Bengio</a>
+              Samy&nbsp;Bengio</a>
           <br/><br/>
 
         <em class = "title"><a
             href = "http://arxiv.org/abs/1506.02216"
             title = "Variational auto-encoder meets Deep-RNN.">
-            A Recurrent Latent Variable Model for Sequential Data
-            </a></em>
-            [<a href = "https://github.com/jych/nips2015_vrnn">
-            code
-            </a>]<br/>
-            Neural Information Processing Systems (NIPS) 2015<br/>
+            A Recurrent Latent Variable Model for Sequential Data</a></em>&nbsp;[&nbsp;<a href = "https://github.com/jych/nips2015_vrnn">code</a>&nbsp;]<br/>
+            <a href = "https://nips.cc/Conferences/2015">
+                Neural Information Processing Systems 2015</a><br/>
             <a href = "https://sites.google.com/site/junyoungchung08/">
-                Junyoung Chung</a>,
+                Junyoung&nbsp;Chung</a>,
             <a href = "https://kastnerkyle.github.io/">
-                Kyle Kastner</a>,
-            Laurent Dinh,
-            Kratarth Goel,<br/>
+                Kyle&nbsp;Kastner</a>,
+            Laurent&nbsp;Dinh,
+            Kratarth&nbsp;Goel,
             <a href = "https://aaroncourville.wordpress.com/">
-                Aaron Courville</a>,
+                Aaron&nbsp;Courville</a>,
             <a href = "http://www.iro.umontreal.ca/~bengioy/">
-                Yoshua Bengio</a>
+                Yoshua&nbsp;Bengio</a>
             <br/><br/>
         <em class = "title"><a
             href = "http://arxiv.org/abs/1410.8516"
             title = "Tractable maximum likelihood with neural networks.">
-            NICE: Non-linear Independent Components Estimation
-            </a></em>
-            [<a href = "https://github.com/laurent-dinh/nice">
-            code
-            </a>]<br/>
-            International Conference in Learning Representations 2015, workshop track<br/>
-            Laurent Dinh,
+            NICE: Non-linear Independent Components Estimation</a></em>&nbsp;[<a href = "https://github.com/laurent-dinh/nice">&nbsp;code</a>&nbsp;]<br/>
+            <a href = "http://www.iclr.cc/doku.php?id=iclr2015:main">
+                International Conference in Learning Representations 2015</a>, workshop track<br/>
+            Laurent&nbsp;Dinh,
             <a href = "http://www-etud.iro.umontreal.ca/~kruegerd/">
-                David Krueger</a>,
+                David&nbsp;Krueger</a>,
             <a href = "http://www.iro.umontreal.ca/~bengioy/">
-                Yoshua Bengio</a>
+                Yoshua&nbsp;Bengio</a>
         <br/><br/>
         <em class = "title"><a
             href = "http://arxiv.org/abs/1406.2989">
             Techniques for Learning Binary Stochastic Feedforward Neural Networks
             </a></em><br/>
-            International Conference on Learning Representations 2015, conference track<br/>
+            <a href = "http://www.iclr.cc/doku.php?id=iclr2015:main">
+                International Conference on Learning Representations 2015</a>, conference track<br/>
             <a href = "http://users.ics.aalto.fi/praiko/">
-                Tapani Raiko</a>,
-            Mathias Berglund,
-            Guillaume Alain,
-            Laurent Dinh
+                Tapani&nbsp;Raiko</a>,
+            <a href = "https://people.aalto.fi/index.html#mathias_berglund">   
+                Mathias&nbsp;Berglund</a>,
+            <a href = "http://www.cs.ubc.ca/~gyomalin/">
+                Guillaume&nbsp;Alain</a>,
+            Laurent&nbsp;Dinh
         <br/><br/>
         <em class = "title"><a
-            href = "http://papers.nips.cc/paper/5025-predicting-parameters-in-deep-learning"
+            href = "http://arxiv.org/abs/1306.0543"
             title = "Prior knowledge on our models allows us to learn a significantly smaller subset of parameters and predicting the remaining ones via kernel ridge regression.">
             Predicting Parameters in Deep Learning
             </a></em><br/>
-            Neural Information Processing Systems 2013<br/>
+            <a href = "https://nips.cc/Conferences/2013">
+                Neural Information Processing Systems 2013</a><br/>
             <a href = "http://mdenil.com">
-                Misha Denil</a>,
-            Babak Shakibi,
-            Laurent Dinh,
+                Misha&nbsp;Denil</a>,
+            Babak&nbsp;Shakibi,
+            Laurent&nbsp;Dinh,
             <a href = "http://www.cs.toronto.edu/~ranzato/">
-                Marc'Aurelio Ranzato</a>,
+                Marc'Aurelio&nbsp;Ranzato</a>,
             <a href = "http://www.cs.ox.ac.uk/people/nando.defreitas/">
-                Nando De Freitas</a>
+                Nando&nbsp;De&nbsp;Freitas</a>
     </div>
 
    </body>
