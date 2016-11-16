@@ -1,0 +1,188 @@
+<html>
+<div class = 'container'>
+<div class = 'main'>
+    <table class = 'main'>
+        <tr>
+            <td></td>
+            <td><span title='Validation/test examples from the dataset.'>Examples</span></td>
+            <td><a href="#samples"><span title='Samples from the model (original size).'>Samples</a></td>
+            <td><a href="#extrapolation"><span title='Samples from the model (twice as large as the images in the training dataset).'>Samples (twice as large)</a></td>
+            <td><a href="#extrapolation"><span title='Sample from the model (ten times as large as the images in the training dataset).'>Samples (ten times as large)</a></td>
+            <td><a href="#information-loss"><span title='Resampling the lowest latent variables in the hierarchy. More and more variables are resampled as we go right. Showing the semantics of the model.'>Information loss</a></td>
+            <td><a href="#manifold"><span title='Manifold in latent space built from validation/test examples projected back into input space.'>Manifold (hover over for animation)</a></td>
+        </tr>
+        <tr>
+          <td><p class='dataset'><a href='http://image-net.org/small/download.php'>Imagenet (32x32)</a></p></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/imnet32_examples.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/imnet32_samples.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/imnet32_samples_x2.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/imnet32_samples_x10.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/imnet32_compression.png'
+                height = '320'
+                width = '320'></td>
+            <td><div class='imnet32_manifold'></div></td>
+        </tr>
+        <tr>
+            <td><p class='dataset'><a href='http://image-net.org/small/download.php'>Imagenet (64x64)</a></p></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/imnet_examples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/imnet_samples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/imnet_samples_x2.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/imnet_samples_x10.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/imnet_compression.png'
+                height = '320'
+                width = '320'></td>
+            <td><div class='imnet_manifold'></div></td>
+        </tr>
+        <tr>
+          <td><p class='dataset'><a href='http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html'>CelebA</a></p></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/celeba_examples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/celeba_samples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/celeba_samples_x2.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/celeba_samples_x10.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/celeba_compression.png'
+                height = '320'
+                width = '320'></td>
+            <td><div class='celeba_manifold'></div></td>
+        </tr>
+        <tr>
+            <td><p class='dataset'><a href='http://lsun.cs.princeton.edu/2016/'>LSUN (bedroom)</a></p></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/bedroom_examples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/bedroom_samples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/bedroom_samples_x2.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/bedroom_samples_x10.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/bedroom_compression.png'
+                height = '320'
+                width = '320'></td>
+            <td><div class='bedroom_manifold'></div></td>
+        </tr>
+        <tr>
+            <td><p class='dataset'><a href='http://lsun.cs.princeton.edu/2016/'>LSUN (tower)</a></p></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/tower_examples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/tower_samples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/tower_samples_x2.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/tower_samples_x10.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/tower_compression.png'
+                height = '320'
+                width = '320'></td>
+            <td><div class='tower_manifold'></div></td>
+        </tr>
+        <tr>
+            <td><p class='dataset'><a href='http://lsun.cs.princeton.edu/2016/'>LSUN (church outdoor)</a></p></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/church_examples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/church_samples.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/church_samples_x2.png'
+                height = '320'
+                width = '320'></td>
+            <td class='tdimg'><img
+                class='wheelzoom'
+                src='{{ site.url }}/img/real_nvp_fig/church_samples_x10.png'
+                height = '320'
+                width = '320'></td>
+            <td><img
+                src='{{ site.url }}/img/real_nvp_fig/church_compression.png'
+                height = '320'
+                width = '320'></td>
+            <td><div class='church_manifold'></div></td>
+        </tr>
+    </table>
+    <script>
+        wheelzoomList = document.querySelectorAll('.wheelzoom')
+        for (i = 0; i < 20; i++) {
+            wheelzoom(wheelzoomList[i], {max_zoom:2., zoom:0.05})
+        }
+    </script>
+
+</div>
+</div>
+</html>

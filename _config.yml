@@ -1,0 +1,19 @@
+# Site settings
+title: Thesis by Blogpost
+email: firstname.lastname@umontreal.ca
+baseurl: "" # the subpath of your site, e.g. /blog
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://laurent-dinh.github.io/"
+
+# Sidebar settings
+description: PhD candidate @ Montréal Institute for Learning Algorithms
+
+# Social icons
+linkedin: laurent-dinh-b9287237
+github: laurent-dinh
+twitter: laurent_dinh
+
+footer: © Taken theme
+
+# Build settings
+markdown: kramdown

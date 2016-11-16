@@ -1,106 +1,42 @@
-html
+div.container
 {
-    width: 100%;
-    height: 100%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    scrollbar-face-color: rgb(237,149,100);
-    font-family:"Lucida Sans Unicode", "Trebuchet MS",Geneva,Arial,Helvetica,sans-serif;
-    background-color: rgb(26,13,0);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: scroll;
+  overflow: scroll;
 }
 
-body
+.center-image
 {
-    margin: 0px 0px 0px 0px;
-    padding: 10px 10px 10px 10px;
-    font-family:"Lucida Sans Unicode", "Trebuchet MS",Geneva,Arial,Helvetica,sans-serif;
-    background-image : none;
-    background-color: transparent;
-    font-size:12px;
-    overflow: hidden;
-    left: 0%;
-    top: 0%;
-    position: absolute;
+    margin: 0 auto;
+    display: block;
 }
 
-div
+td>img
 {
-  border-color: transparent;
-  border-style: solid;
-    background-color: rgb(72,60,50);
-  font-weight: normal;
-  margin:0px;
-  color: white;
-  overflow: auto;
+  min-width: 320px;
+  min-height: 320px;
+  overflow: hidden;
 }
 
-.main
-{
-  width: 100%;
-  min-width: 500px;
-  min-height: 200px;
-  padding: 10px;
-  border: 3px rgb(169,143,100) outset;
-  border-radius: 10px;
-  font-weight: bold;
-  text-align: center;
-}
-.publications
-{
-  width: 40%;
-  min-width: 500px;
-  min-height: 100px;
-  margin-top: 30px;
-  padding: 20px;
-  padding-top: 0px;
-    padding-right: 0px;
-  border: 3px rgb(169,143,100) outset;
-  border-radius: 10px;
-}
-
-
-.comic
-{
-    font-family:COMIC SANS MS;
-  border-color: transparent;
-  border-style: solid;
-  background-color: rgb(219,219,219);
-  font-weight: normal;
-  font-size:10px;
-  color: black;
-  overflow: auto;
-  margin: 20px;
-  min-margin: 20px;
-  max-margin: 50px;
-  padding: 5px;
-  border: 2px black solid;
-  float: right;
-  vertical-align:text-bottom;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  text-transform : uppercase;
-}
-
-.tdimg img:hover
+/*.tdimg img:hover
 {
   width: 640px;
   height: 640px;
-  margin-left: -320px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  max-width: 640px;
+  max-height: 640px;
   margin-top: -320px;
-}
+  margin-left: -320px;
+  overflow: hidden;
+}*/
 
 .tdimg img
 {
   width: 320px;
   height: 320px;
+  max-width: 320px;
+  max-height: 320px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
@@ -108,7 +44,6 @@ div
           transition: all 1s ease;
   overflow: hidden;
 }
-
 
 .tdimg
 {
@@ -119,43 +54,13 @@ div
   overflow: hidden;
 }
 
-a
-{
-    color: rgb(245,222,179);
-    text-decoration: none;
-}
-
-a:hover
-{
-    color: rgb(255,219,88);
-    text-decoration: none;
-}
-
-a:focus
-{
-    color: rgb(255,219,88);
-    text-decoration: none;
-}
-
-
-h2
-{
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.title
-{
-  font-weight: italic;
-}
-
 .imnet32_manifold
 {
   margin:0px;
   padding:0px;
   height:320px;
   width:320px;
-  background: url('real_nvp_fig/imnet32_manifold.png');
+  background: url('{{ site.url }}/img/real_nvp_fig/imnet32_manifold.png');
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -166,7 +71,7 @@ h2
 
 .imnet32_manifold:hover
 {
-  background: url('real_nvp_fig/imnet32_manifold.gif');
+  background: url('{{ site.url }}/img/real_nvp_fig/imnet32_manifold.gif');
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -182,7 +87,7 @@ h2
   padding:0px;
   height:320px;
   width:640px;
-  background: url('real_nvp_fig/imnet_manifold.png');
+  background: url('{{ site.url }}/img/real_nvp_fig/imnet_manifold.png');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -193,7 +98,7 @@ h2
 
 .imnet_manifold:hover
 {
-  background: url('real_nvp_fig/imnet_manifold.gif');
+  background: url('{{ site.url }}/img/real_nvp_fig/imnet_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -209,7 +114,7 @@ h2
   padding:0px;
   height:320px;
   width:640px;
-  background: url('real_nvp_fig/celeba_manifold.png');
+  background: url('{{ site.url }}/img/real_nvp_fig/celeba_manifold.png');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -220,7 +125,7 @@ h2
 
 .celeba_manifold:hover
 {
-  background: url('real_nvp_fig/celeba_manifold.gif');
+  background: url('{{ site.url }}/img/real_nvp_fig/celeba_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -236,7 +141,7 @@ h2
   padding:0px;
   height:320px;
   width:640px;
-  background: url('real_nvp_fig/bedroom_manifold.png');
+  background: url('{{ site.url }}/img/real_nvp_fig/bedroom_manifold.png');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -247,7 +152,7 @@ h2
 
 .bedroom_manifold:hover
 {
-  background: url('real_nvp_fig/bedroom_manifold.gif');
+  background: url('{{ site.url }}/img/real_nvp_fig/bedroom_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -263,7 +168,7 @@ h2
   padding:0px;
   height:320px;
   width:640px;
-  background: url('real_nvp_fig/church_manifold.png');
+  background: url('{{ site.url }}/img/real_nvp_fig/church_manifold.png');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -274,7 +179,7 @@ h2
 
 .church_manifold:hover
 {
-  background: url('real_nvp_fig/church_manifold.gif');
+  background: url('{{ site.url }}/img/real_nvp_fig/church_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -290,7 +195,7 @@ h2
   padding:0px;
   height:320px;
   width:640px;
-  background: url('real_nvp_fig/tower_manifold.png');
+  background: url('{{ site.url }}/img/real_nvp_fig/tower_manifold.png');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -301,7 +206,7 @@ h2
 
 .tower_manifold:hover
 {
-  background: url('real_nvp_fig/tower_manifold.gif');
+  background: url('{{ site.url }}/img/real_nvp_fig/tower_manifold.gif');
   background-position: left top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -311,6 +216,6 @@ h2
 }
 
 .dataset {
-	transform: rotate(270deg);
+  transform: rotate(270deg);
   transform-origin:50% 50%;
 }
