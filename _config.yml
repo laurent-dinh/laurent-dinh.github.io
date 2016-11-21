@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://laurent-dinh.github.io/"
 
 # Sidebar settings
-description: PhD candidate @ Montréal Institute for Learning Algorithms
+description: Laurent Dinh. PhD candidate @ Montréal Institute for Learning Algorithms.
 
 # Social icons
 linkedin: laurent-dinh-b9287237
