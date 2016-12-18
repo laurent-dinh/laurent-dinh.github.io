@@ -9,7 +9,7 @@ permalink: /reports/
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/)  
 [**Deep Learning Symposium (Neural Information Processing Systems) 2016**](https://sites.google.com/site/nips2016deeplearnings/) **(Oral)**
 
-Using invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling on large-scale. ([arxiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %}))
+Using invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling on large-scale. ([arxiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/edit?usp=sharing))
 
 ### Deep independence network analysis of structural brain imaging: A simulation study
 [*Eduardo Castro*](http://mialab.mrn.org/lab-members/eduardo-castro.html), [*Devon Hjelm*](http://mialab.mrn.org/lab-members/devon.html), [*Sergey Plis*](http://www.mrn.org/people/sergey-plis/principal-investigators), *Laurent Dinh*, [*Jessica Turner*](http://www.mrn.org/people/jessica-turner/principal-investigators), [*Vince Calhoun*](http://www.mrn.org/people/http-www.mrn.org-people-vince-calhoun-principal-investigators/principal-investigators)  
