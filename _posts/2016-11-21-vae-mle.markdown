@@ -15,8 +15,8 @@ Given a data space $$ \mathcal{X} $$ and a continuous latent space $$ \mathcal{Z
 Since optimizing $$ \log\big(p_{\theta}(x)\big) = \log\big(\int_{\mathcal{Z}}{p_{\theta}(x \mid z)p(z)dz}\big) $$ is in general intractable, their inventors chose to rely on a auxiliary distribution called the *approximate posterior* $$ q_{\phi}(z \mid x) $$ to optimize the *ELBo*, a lower bound on the log-likelihood:
 
 $$
-\mathcal{L}(x) = \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\Big(\frac{p_{\theta}(x \mid z)p(z)}{q_{\phi}(z \mid x)}\Big)\Big] \\
-= \mathbb{E}_{z ~ q_{\phi}(z \mid x)}\Big[\log\big(p_{\theta}(x \mid z)\big)\Big] - KL(q_{\phi}(z \mid x) || p(z)) \leq \log\big(p_{\theta}(x)\big)
+\mathcal{L}_{ELBO}(x) = \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\Big(\frac{p_{\theta}(x \mid z)p(z)}{q_{\phi}(z \mid x)}\Big)\Big] \\
+= \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\big(p_{\theta}(x \mid z)\big)\Big] - KL(q_{\phi}(z \mid x) || p(z)) \leq \log\big(p_{\theta}(x)\big)
 $$
 
 Building a reasonable approximate posterior is called doing approximate inference. Instead of doing approximate inference at every gradient iteration, the standard Variational Auto-Encoder defines $$ q_{\phi}(z \mid x) $$ as a gaussian $$ \mathcal{N}\big(\mu_{\phi}(x), \sigma_{\phi}^{2}(x)\big) $$ through the functions $$ \mu_{\phi} $$ and $$ \sigma_{\phi}^{2} $$ used to amortize inference.
@@ -29,17 +29,21 @@ Please read the original papers for more informations, [*Auto-Encoding Variation
 
 After some discussions following [my talk at Twitter](https://www.periscope.tv/w/1ypKdAVmbEpGW), I discovered that one under-appreciated fact about Variational Auto-Encoders is that they also optimize the joint log-likelihood $$ p_{\theta}(x, \epsilon) $$.
 
-More precisely, given a data point $$ x $$, the standard Variational Auto-Encoder algorithm defines a bijective transformation from the auxiliary $$ \epsilon \mapsto z = \mu_{\phi}(x) + \sigma_{\phi}(x) \cdot \epsilon $$ with a Jacobian determinant of $$ \sigma_{\phi}(x) $$. Therefore, $$ q(z \mid x) = \sigma_{\phi}(x)^{-1}q(\epsilon) $$, which checks with the fact that $$ \mathcal{N}\big(z; \mu_{\phi}(x), \sigma_{\phi}^{2}(x)\big) = \sigma_{\phi}(x)^{-1}\mathcal{N}(\sigma_{\phi}^{-1}(x)(z - \mu_{\phi}(x)); 0, I) $$. Moreover, $$ p_{\theta}(z \mid x) = \sigma_{\phi}(x)^{-1}p_{\theta, \phi}(\epsilon \mid x) $$.
+Variational Auto-Encoders rely on the *Reparametrization Trick*, a straightforward application of the *Change of Variable formula*. According to this formula, if $$ z = g(\epsilon; x) $$ and $$ g(\cdot ; x) $$ is bijective then:
+
+$$ q(z \mid x) = \Big|\det\Big(\frac{\partial g}{\partial \epsilon^{T}}\Big)\Big|^{-1} q(\epsilon) $$
+
+In our case, given a data point $$ x $$, the standard Variational Auto-Encoder algorithm defines a bijective transformation from the auxiliary $$ \epsilon \mapsto z = \mu_{\phi}(x) + \sigma_{\phi}(x) \cdot \epsilon $$ with a Jacobian determinant of $$ \prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)} $$. Therefore, $$ q(z \mid x) = \Big(\prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)}\Big)^{-1}q(\epsilon) $$, which checks with the fact that $$ \mathcal{N}\big(z; \mu_{\phi}(x), \sigma_{\phi}^{2}(x)\big) = \Big(\prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)}\Big)^{-1}\mathcal{N}\Big(\sigma_{\phi}^{-1}(x)\left(z - \mu_{\phi}(x)\Big); 0, I\right) $$. Likewise, $$ p_{\theta}(z \mid x) = \Big(\prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)}\Big)^{-1}p_{\theta, \phi}(\epsilon \mid x) $$.
 
 I'll define $$ q(x, \epsilon) = q(x)q(\epsilon) $$ as the true data and auxiliary variable joint distribution and $$ p_{\theta, \phi}(x, \epsilon) $$ as the model distribution. If we manipulate the log-likelihood of $$ (x, \epsilon) \sim q(x)q(\epsilon) $$ according to the model $$ p_{\theta, \phi}(x, \epsilon) $$, we obtain:
 
 $$
 \log\big(p_{\theta, \phi}(x, \epsilon)\big) \\
 = \log\big(p_{\theta}(x)p_{\theta, \phi}(\epsilon \mid x)\big) \\
-= \log\big(p_{\theta}(x)p_{\theta}(z \mid x)\big) + \log\big(\sigma_{\phi}(x)\big) \\
-= \log\big(p_{\theta}(x, z)\big) + \log\big(\sigma_{\phi}(x)\big) \\
-= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) + \log\big(\sigma_{\phi}(x)\big) \\
-= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) + \log\big(\sigma_{\phi}(x)\big) - \log\big(q(\epsilon)\big) + \log\big(q(\epsilon)\big) \\
+= \log\big(p_{\theta}(x)p_{\theta}(z \mid x)\big) + \sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)} \\
+= \log\big(p_{\theta}(x, z)\big) + \sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)} \\
+= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) + \sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)} \\
+= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) + \Big(\sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)}\Big) - \log\big(q(\epsilon)\big) + \log\big(q(\epsilon)\big) \\
 = \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) - \log\big(q_{\phi}(z \mid x)\big) + \log\big(q(\epsilon)\big)
 $$
 
@@ -47,8 +51,8 @@ Therefore:
 
 $$
 \mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(p_{\theta, \phi}(x, \epsilon)\big)\Big] \\
-= \mathbb{E}_{z ~ q_{\phi}(z \mid x)}\Big[\log\big(p_{\theta}(x \mid z)\big)\Big] - KL\big(q_{\phi}(z \mid x)||p(z)\big) + \mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(q(\epsilon)\big)\Big] \\
-= \mathcal{L}(x) - H\big(q(\epsilon)\big)
+= \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\big(p_{\theta}(x \mid z)\big)\Big] - KL\big(q_{\phi}(z \mid x)||p(z)\big) + \mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(q(\epsilon)\big)\Big] \\
+= \mathcal{L}_{ELBO}(x) - H\big(q(\epsilon)\big)
 $$
 
 As $$ H\big(q(\epsilon)\big) $$ is constant, optimizing the Evidence Lower Bound is equivalent in this case with optimizing the expected joint log-likelihood $$ \mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(p_{\theta, \phi}(x, \epsilon)\big)\Big] $$.
