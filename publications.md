@@ -9,7 +9,8 @@ permalink: /reports/
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/)  
 [**Deep Learning Symposium (Neural Information Processing Systems) 2016**](https://sites.google.com/site/nips2016deeplearnings/) **(Oral)**
 
-Using invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling on large-scale. ([arxiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/edit?usp=sharing))
+Using invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling on large-scale.  
+([arxiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/edit?usp=sharing)) ([code](https://github.com/tensorflow/models/tree/master/real_nvp))
 
 ### Deep independence network analysis of structural brain imaging: A simulation study
 [*Eduardo Castro*](http://mialab.mrn.org/lab-members/eduardo-castro.html), [*Devon Hjelm*](http://mialab.mrn.org/lab-members/devon.html), [*Sergey Plis*](http://www.mrn.org/people/sergey-plis/principal-investigators), *Laurent Dinh*, [*Jessica Turner*](http://www.mrn.org/people/jessica-turner/principal-investigators), [*Vince Calhoun*](http://www.mrn.org/people/http-www.mrn.org-people-vince-calhoun-principal-investigators/principal-investigators)  
@@ -39,4 +40,5 @@ Exploring gradient estimators for binary stochastic neural network. ([arxiv](htt
 [*Misha&nbsp;Denil*](http://mdenil.com), *Babak&nbsp;Shakibi*, *Laurent&nbsp;Dinh*, [*Kratarth&nbsp;Goel*](https://www.linkedin.com/in/kratarth-goel-98b37741), [*Marc'Aurelio&nbsp;Ranzato*](http://www.cs.toronto.edu/~ranzato/), [*Nando&nbsp;De&nbsp;Freitas*](http://www.cs.ox.ac.uk/people/nando.defreitas/)  
 [**Neural Information Processing Systems 2013**](https://nips.cc/Conferences/2013)
 
-Prior knowledge on models allows us to learn on a significantly smaller subset of parameters and predicting the remaining ones via kernel ridge regression. ([arxiv](http://arxiv.org/abs/1306.0543)) ([code](https://github.com/mdenil/parameter_prediction))
+Prior knowledge on models allows us to learn on a significantly smaller subset of parameters and predicting the remaining ones via kernel ridge regression.  
+([arxiv](http://arxiv.org/abs/1306.0543)) ([code](https://github.com/mdenil/parameter_prediction))
