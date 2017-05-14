@@ -7,8 +7,9 @@ permalink: /reports/
 
 ### Sharp Minima Can Generalize For Deep Nets
 *Laurent&nbsp;Dinh*, [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/), [*Yoshua&nbsp;Bengio*](http://www.iro.umontreal.ca/~bengioy/)  
+[**International Conference on Machine Leaning 2017**](https://2017.icml.cc/) **(Oral)**  
 
-We show several failure modes in connecting curvature to generalization. ([arxiv](https://arxiv.org/abs/1703.04933))
+Through simple reasonings, we show several failure modes in connecting curvature to generalization. ([arxiv](https://arxiv.org/abs/1703.04933))
 
 ### Density estimation using Real NVP
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/)  
