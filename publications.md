@@ -9,7 +9,8 @@ permalink: /reports/
 *Laurent&nbsp;Dinh*, [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/), [*Yoshua&nbsp;Bengio*](http://www.iro.umontreal.ca/~bengioy/)  
 [**International Conference on Machine Leaning 2017**](https://2017.icml.cc/) **(Oral)**  
 
-Through simple reasonings, we show several failure modes in connecting curvature to generalization. ([arxiv](https://arxiv.org/abs/1703.04933))
+Through simple reasonings, we show several failure modes in connecting curvature to generalization. ([arxiv](https://arxiv.org/abs/1703.04933)) ([slides](http://goo.gl/Be2jmo)) ([poster](https://goo.gl/goSpCX))
+
 
 ### Density estimation using Real NVP
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/)  
@@ -17,7 +18,7 @@ Through simple reasonings, we show several failure modes in connecting curvature
 [**International Conference in Learning Representations 2017**](http://www.iclr.cc/doku.php?id=iclr2017:main) **conference track**
 
 We use invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling in high-dimensional space.  
-([arxiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/edit?usp=sharing)) ([code](https://github.com/tensorflow/models/tree/master/real_nvp))
+([arxiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([talk @ Twitter Boston](https://www.periscope.tv/w/1ypKdAVmbEpGW)) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/edit?usp=sharing)) ([code](https://github.com/tensorflow/models/tree/master/real_nvp))
 
 ### Deep independence network analysis of structural brain imaging: A simulation study
 [*Eduardo Castro*](http://mialab.mrn.org/lab-members/eduardo-castro.html), [*Devon Hjelm*](http://mialab.mrn.org/lab-members/devon.html), [*Sergey Plis*](http://www.mrn.org/people/sergey-plis/principal-investigators), *Laurent Dinh*, [*Jessica Turner*](http://www.mrn.org/people/jessica-turner/principal-investigators), [*Vince Calhoun*](http://www.mrn.org/people/http-www.mrn.org-people-vince-calhoun-principal-investigators/principal-investigators)  
@@ -35,7 +36,7 @@ Variational auto-encoder meets Deep-RNN. ([arxiv](http://arxiv.org/abs/1506.0221
 *Laurent&nbsp;Dinh*, [*David&nbsp;Krueger*](http://www-etud.iro.umontreal.ca/~kruegerd/), [*Yoshua&nbsp;Bengio*](http://www.iro.umontreal.ca/~bengioy/)  
 [**International Conference in Learning Representations 2015**](http://www.iclr.cc/doku.php?id=iclr2015:main) **workshop track**
 
-Tractable maximum likelihood with deep neural networks. ([arxiv](http://arxiv.org/abs/1410.8516)) ([code](https://github.com/laurent-dinh/nice))
+Tractable maximum likelihood with deep neural networks. ([arxiv](http://arxiv.org/abs/1410.8516)) ([code](https://github.com/laurent-dinh/nice)) ([talk @ Berkeley](https://archive.org/details/Redwood_Center_2015_10_14_Laurent_Dinh))
 
 ### Techniques for Learning Binary Stochastic Feedforward Neural Networks
 [*Tapani&nbsp;Raiko*](http://users.ics.aalto.fi/praiko/), [*Mathias&nbsp;Berglund*](https://people.aalto.fi/index.html#mathias_berglund), [*Guillaume&nbsp;Alain*](http://www.cs.ubc.ca/~gyomalin/), *Laurent&nbsp;Dinh*  
