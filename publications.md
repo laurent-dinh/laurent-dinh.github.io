@@ -5,6 +5,13 @@ permalink: /reports/
 ---
 
 
+### Learning Awareness Models
+[*Brandon&nbsp;Amos*](http://bamos.github.io/), *Laurent&nbsp;Dinh*, [*Serkan&nbsp;Cabi*](https://uk.linkedin.com/in/serkan-cabi-79576968), [*Thomas&nbsp;Rothörl*](https://uk.linkedin.com/in/thomasrothoerl), [*Sergio&nbsp;Gómez&nbsp;Colmenarejo*](https://uk.linkedin.com/in/sergio-gómez-colmenarejo-10666131), [*Alistair&nbsp;Muldal*](alimuldal), [*Tom&nbsp;Erez*](https://fr.linkedin.com/in/ereztom), [*Yuval&nbsp;Tassa*](https://www.cs.washington.edu/people/postdocs/tassa), [*Nando&nbsp;De&nbsp;Freitas*](http://www.cs.ox.ac.uk/people/nando.defreitas/), [*Misha&nbsp;Denil*](http://mdenil.com)  
+[**International Conference in Learning Representations 2018**](https://iclr.cc/Conferences/2018) **conference track**  
+
+We train predictive models on proprioceptive information and show they represent properties of external objects. ([OpenReview](https://openreview.net/forum?id=r1HhRfWRZ)) ([videos](https://goo.gl/mZuqAV))
+
+
 ### Sharp Minima Can Generalize For Deep Nets
 *Laurent&nbsp;Dinh*, [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/), [*Yoshua&nbsp;Bengio*](http://www.iro.umontreal.ca/~bengioy/)  
 [**International Conference on Machine Leaning 2017**](https://2017.icml.cc/) **(Oral)**  

@@ -72,15 +72,16 @@ label[data-function*='swipe'] {
   z-index: 1;
   display: block;
   text-align: center;
-  transform: translate3d(260px,0,0);
-  transition: transform .3s;
   opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s, opacity .5s linear;
 }
 
 @media(max-width:768px) {
   input[data-function*='swipe'] {
     position: absolute;
     opacity: 0;
+    transition: opacity .5s;
   }
 
   label[data-function*='swipe'] {
@@ -93,6 +94,8 @@ label[data-function*='swipe'] {
     text-align: center;
     transform: translate3d(0,0,0);
     transition: transform .3s;
+    visibility: visible;
+    width: auto;
     opacity: 1;
   }
 
