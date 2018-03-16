@@ -7,9 +7,21 @@ permalink: /about/
 {::nomarkdown}
 <style type="text/css">
 .post, .post-container {
-  max-width: 512px;
-  margin-left: auto;
+  max-width: calc(512px + 180px);
   margin-right: auto;
+}
+
+@media(min-width:768px) {
+  .post, .post-container {
+    padding-left: 180px;
+  }
+}
+
+
+@media(max-width:768px) {
+  .post, .post-container {
+    margin-left: auto;
+  }
 }
 </style>
 {:/nomarkdown}

@@ -5,10 +5,22 @@ layout: default
 
 <style type="text/css">
 .post, .post-container {
-  max-width: 512px;
+  max-width: calc(512px + 180px);
   min-height: 25em;
-  margin-left: auto;
   margin-right: auto;
+}
+
+@media(min-width:768px) {
+  .post, .post-container {
+    padding-left: 180px;
+  }
+}
+
+
+@media(max-width:768px) {
+  .post, .post-container {
+    margin-left: auto;
+  }
 }
 </style>
 
