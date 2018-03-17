@@ -93,16 +93,15 @@ label[data-function*='swipe'] {
     display: block;
     text-align: center;
     transform: translate3d(0,0,0);
-    transition: transform .3s;
-    visibility: visible;
-    width: auto;
     opacity: 1;
+    transition: transform .3s, opacity .5s linear;
+    visibility: visible;
   }
 
   input[data-function*='swipe']:checked ~ label[data-function*='swipe'] {
     transform: translate3d(180px,0,0);
     opacity: 1;
-    transition: transform .3s;
+    transition: transform .3s, opacity .5s linear;
   }
 }
 
@@ -133,12 +132,14 @@ label[data-function*='swipe'] {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.3s padding ease-out;
 }
 
 
 @media(min-width:768px) {
   .post, .post-container {
     padding-left: 180px;
+    transition: 0.3s padding ease-out;
   }
 }
 
@@ -249,6 +250,7 @@ label[data-function*='swipe'] {
 @media(max-width:768px) {
   input[data-function*='swipe']:checked ~ .content {
     transform: translate3d(180px,0px,0px);
+    transition: all .3s;
   }
 
   input[data-function*='swipe']:checked ~ .sidebar {
