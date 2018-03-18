@@ -52,7 +52,7 @@ Tractable maximum likelihood with deep neural networks. ([arxiv](http://arxiv.or
 We explore gradient estimators for binary stochastic neural network. ([arxiv](http://arxiv.org/abs/1406.2989))
 
 ### Predicting Parameters in Deep Learning
-[*Misha&nbsp;Denil*](http://mdenil.com), *Babak&nbsp;Shakibi*, *Laurent&nbsp;Dinh*, [*Kratarth&nbsp;Goel*](https://www.linkedin.com/in/kratarth-goel-98b37741), [*Marc'Aurelio&nbsp;Ranzato*](http://www.cs.toronto.edu/~ranzato/), [*Nando&nbsp;De&nbsp;Freitas*](http://www.cs.ox.ac.uk/people/nando.defreitas/)  
+[*Misha&nbsp;Denil*](http://mdenil.com), *Babak&nbsp;Shakibi*, *Laurent&nbsp;Dinh*, [*Marc'Aurelio&nbsp;Ranzato*](http://www.cs.toronto.edu/~ranzato/), [*Nando&nbsp;De&nbsp;Freitas*](http://www.cs.ox.ac.uk/people/nando.defreitas/)  
 [**Neural Information Processing Systems 2013**](https://nips.cc/Conferences/2013)
 
 Prior knowledge on models allows us to learn on a significantly smaller subset of parameters and predicting the remaining ones via kernel ridge regression.  
