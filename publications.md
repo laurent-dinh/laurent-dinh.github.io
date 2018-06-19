@@ -5,6 +5,10 @@ permalink: /reports/
 ---
 
 
+### Reparametrization in Deep Learning
+PhD thesis. ([Google Drive](https://goo.gl/bCqgDo)) ([slides](https://goo.gl/hHz1mp)) ([extended slides](https://goo.gl/Nb2rSS))
+
+
 ### Learning Awareness Models
 [*Brandon&nbsp;Amos*](http://bamos.github.io/), *Laurent&nbsp;Dinh*, [*Serkan&nbsp;Cabi*](https://uk.linkedin.com/in/serkan-cabi-79576968), [*Thomas&nbsp;Rothörl*](https://uk.linkedin.com/in/thomasrothoerl), [*Sergio&nbsp;Gómez&nbsp;Colmenarejo*](https://uk.linkedin.com/in/sergio-gómez-colmenarejo-10666131), [*Alistair&nbsp;Muldal*](alimuldal), [*Tom&nbsp;Erez*](https://fr.linkedin.com/in/ereztom), [*Yuval&nbsp;Tassa*](https://www.cs.washington.edu/people/postdocs/tassa), [*Nando&nbsp;De&nbsp;Freitas*](http://www.cs.ox.ac.uk/people/nando.defreitas/), [*Misha&nbsp;Denil*](http://mdenil.com)  
 [**International Conference in Learning Representations 2018**](https://iclr.cc/Conferences/2018) **conference track**  

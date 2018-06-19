@@ -1,12 +1,12 @@
 # Site settings
 title: Thesis by Blogpost
-email: firstname.lastname@umontreal.ca
+email: laurentdinh@google.com
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 url: "https://laurent-dinh.github.io/"
 
 # Sidebar settings
-description: Laurent Dinh. PhD candidate @ Montréal Institute for Learning Algorithms.
+description: Laurent Dinh. Research Scientist at Google Brain.
 
 # Social icons
 linkedin: laurent-dinh-b9287237
