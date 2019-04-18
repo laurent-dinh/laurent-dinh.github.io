@@ -33,4 +33,4 @@ I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nb
 
 Most of my publications and reports can be found [here](https://scholar.google.ca/citations?user=h7OHSkoAAAAJ).
 
-<img height="35px" style="float: right;" src="{{ site.baseurl }}/img/logo_static.png" onmouseenter="this.src='{{ site.baseurl }}/img/logo_in.gif'" onmouseleave="this.src='{{ site.baseurl }}/img/logo_out.gif'">
+<div style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_static.png'); background-size: contain;" onmouseenter="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif)'" ontouchstart="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif)'" onmouseleave="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif)'" ontouchend="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif)'" ontouchcancel="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif)'"></div>
