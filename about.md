@@ -24,6 +24,19 @@ permalink: /
   }
 }
 </style>
+
+<script type="text/javascript">
+var global_index = 0
+
+function preloadImageLD(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index);
+preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);
+</script>
+
 {:/nomarkdown}
 
 ### Laurent Dinh
@@ -33,4 +46,10 @@ I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nb
 
 Most of my publications and reports can be found [here](https://scholar.google.ca/citations?user=h7OHSkoAAAAJ).
 
-<div style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_static.png'); background-size: contain;" onmouseenter="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif)'" ontouchstart="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif)'" onmouseleave="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif)'" ontouchend="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif)'" ontouchcancel="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif)'"></div>
+<div
+style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_static.png'); background-size: contain; transition: background-image .25s ease-in-out;"
+onmouseenter="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif?a=' + global_index + ')'" 
+ontouchstart="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif?a=' + global_index + ')'" 
+onmouseleave="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif?a=' + global_index + ')'; global_index++; preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index); preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);" 
+ontouchend="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif?a=' + global_index + ')'; global_index++; preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index); preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);" 
+ontouchcancel="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif?a=' + global_index + ')'; global_index++; preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index); preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);"></div>
