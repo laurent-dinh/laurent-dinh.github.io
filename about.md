@@ -33,4 +33,4 @@ I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nb
 
 Most of my publications and reports can be found [here](https://scholar.google.ca/citations?user=h7OHSkoAAAAJ).
 
-<img height="35px" style="float: right;" src="{{ site.baseurl }}/img/logo.gif">
+<img height="35px" style="float: right;" src="{{ site.baseurl }}/img/logo_static.png" onmouseenter="this.src='{{ site.baseurl }}/img/logo_in.gif'" onmouseleave="this.src='{{ site.baseurl }}/img/logo_out.gif'">
