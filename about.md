@@ -26,15 +26,61 @@ permalink: /
 </style>
 
 <script type="text/javascript">
-var global_index = 0
+var logo_elem = document.getElementById("logo_sign");
+var last_frame_time = new Date().getTime();
+var can_draw = true;
+var can_cpress = true;
 
 function preloadImageLD(url)
 {
     var img=new Image();
     img.src=url;
 }
-preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index);
-preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);
+
+function preloadframes()
+{
+  for (i = 0; i <= 100; i+=2) {
+      if (i % 4 == 0) {
+        preloadImageLD('{{ site.baseurl }}/img/logo_frames/logo_cpress_' + ("000" + i).slice(-3) + '.png');
+      }
+      preloadImageLD('{{ site.baseurl }}/img/logo_frames/logo_draw_' + ("000" + i).slice(-3) + '.png');
+  }
+}
+
+var draw_id = 0;
+preloadframes();
+
+function animate_draw()
+{
+  if (can_draw && draw_id <= 100 && new Date().getTime() > last_frame_time + (20)) {
+    last_frame_time = new Date().getTime();
+    draw_id += 2;
+    draw_id = Math.min(100, draw_id);
+    logo_elem.style.backgroundImage='url({{ site.baseurl }}/img/logo_frames/logo_draw_' + ("000" + draw_id).slice(-3) + '.png)';
+  }
+  else if (can_draw && draw_id >= 100) {
+    can_draw = false;
+    draw_id = 100;
+  }
+  requestAnimationFrame(animate_draw);
+}
+
+function animate_cpress()
+{
+  if (can_cpress && draw_id >= 0 && new Date().getTime() > last_frame_time + (20)) {
+    last_frame_time = new Date().getTime();
+    draw_id -= 4;
+    draw_id = Math.max(0, draw_id);
+    draw_id -= draw_id % 4;
+    logo_elem.style.backgroundImage='url({{ site.baseurl }}/img/logo_frames/logo_cpress_' + ("000" + (100 - draw_id)).slice(-3) + '.png)';
+  }
+  else if (can_cpress && draw_id <= 0) {
+    can_cpress = false;
+    draw_id = 0;
+  }
+  requestAnimationFrame(animate_cpress);
+}
+
 </script>
 
 {:/nomarkdown}
@@ -47,9 +93,16 @@ I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nb
 Most of my publications and reports can be found [here](https://scholar.google.ca/citations?user=h7OHSkoAAAAJ).
 
 <div
-style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_static.png'); background-size: contain; transition: background-image .25s ease-in-out;"
-onmouseenter="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif?a=' + global_index + ')'" 
-ontouchstart="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_in.gif?a=' + global_index + ')'" 
-onmouseleave="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif?a=' + global_index + ')'; global_index++; preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index); preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);" 
-ontouchend="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif?a=' + global_index + ')'; global_index++; preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index); preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);" 
-ontouchcancel="this.style.backgroundImage='url({{ site.baseurl }}/img/logo_out.gif?a=' + global_index + ')'; global_index++; preloadImageLD('{{ site.baseurl }}/img/logo_in.gif?a=' + global_index); preloadImageLD('{{ site.baseurl }}/img/logo_out.gif?a=' + global_index);"></div>
+style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_static.png'); background-size: contain; transition: background-image .000001s ease-in-out;" id="logo_sign"
+onmouseenter="preloadframes(); var logo_elem = document.getElementById('logo_sign'); animate_draw(this); can_draw=true;" 
+ontouchstart="preloadframes(); animate_draw(this); can_draw=true;" 
+onmouseleave="preloadframes(); animate_cpress(this); can_cpress=true;" 
+ontouchend="preloadframes(); animate_cpress(this); can_cpress=true;" 
+ontouchcancel="preloadframes(); animate_cpress(this); can_cpress=true;"></div>
+
+<script type="text/javascript">
+var logo_elem = document.getElementById("logo_sign");
+var last_frame_time = new Date().getTime();
+var can_draw = false;
+var can_cpress = false;
+</script>
