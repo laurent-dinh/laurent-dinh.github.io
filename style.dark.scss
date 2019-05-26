@@ -5,12 +5,17 @@
 
 /* ------------ Core Style -------------- */
 
+html
+{
+    background-color: #000;
+}
 
 body
 {
     margin-top: 20px ! important;
     overflow-x: scroll;
     height: 100%;
+    background-color: #000;
 }
 
 i
@@ -57,7 +62,6 @@ th.title {
   display: flex;
   min-height: 100%;
 }
-
 
 input[data-function*='swipe'] {
   position: absolute;
@@ -153,7 +157,7 @@ label[data-function*='swipe'] {
   transition: transform .3s;
 
   font-family: "Roboto Condensed", Arial, sans-serif;
-  background-color: #fff;
+  background-color: #000;
   /*background-color: #000;*/
   font-size: 16px;
   line-height: 1.5em;
@@ -169,12 +173,12 @@ label[data-function*='swipe'] {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #7B3C3C78;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 
 .content h1 {
     font-weight: normal;
-    color: #343434;
+    color: #686868;
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
@@ -183,31 +187,31 @@ label[data-function*='swipe'] {
 .content h2 {
     font-weight: normal;
     margin-bottom: 5px;
-    color: #333333;
+    color: #666666;
     font-weight: bold;
 }
 
 .content h3 {
     font-weight: normal;
     margin-bottom: 5px;
-    color: #333333;
+    color: #666666;
     font-weight: bold;
 }
 
 .content p
 {
     font-family: "Roboto Condensed", Arial, sans-serif;
-    background-color: #fff;
+    background-color: #000;
     font-size: 16px;
     line-height: 24px;
-    color: #333333;
+    color: #666666;
     font-weight: 300;
 }
 
 .content a {
 
     font-family: "Roboto Condensed", Arial, sans-serif;
-    background-color: #fff;
+    background-color: #000;
     font-size: 16px;
     line-height: normal;
     font-style: normal;
@@ -228,7 +232,7 @@ label[data-function*='swipe'] {
     font-weight: normal;
     line-height: 19.2px;
     word-spacing: 0px;
-    color:#3c3c3c;
+    color:#787878;
 }
 
 .content img
@@ -253,7 +257,7 @@ label[data-function*='swipe'] {
       width: 100%;
     }
   };
-  background-image: url("{{ site.url }}/img/banner_light_repeat.svg");
+  background-image: url("{{ site.url }}/img/banner_dark_repeat.svg");
   background-size: 60px auto;
   background-position: 7px 0px;
 }
@@ -294,11 +298,11 @@ label[data-function*='swipe'] {
   p
   {
     font-family: "Roboto Condensed", Arial, sans-serif;
-    background-color: #ffffff00;
+    background-color: #00000000;
     font-size: 13px;
     line-height: normal;
     font-style: normal;
-    color: #464646;
+    color: #8c8c8c;
     font-weight: 300;
   }
 
@@ -320,11 +324,11 @@ label[data-function*='swipe'] {
     a {
 
       font-family: "Roboto Condensed", Arial, sans-serif;
-      background-color: #ffffff00;
+      background-color: #00000000;
       font-size: 13px;
       line-height: normal;
       font-style: normal;
-      color: #464646;
+      color: #8c8c8c;
       font-weight: 300;
 
     }
@@ -333,6 +337,6 @@ label[data-function*='swipe'] {
 
   hr {
     border-top: 1px solid #7B3c3c78;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
   }
 }

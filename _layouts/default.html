@@ -13,7 +13,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script src="{{ site.baseurl }}/js/index.js"></script>
+    <!-- <script src="{{ site.baseurl }}/js/index.js"></script> -->
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
@@ -32,6 +32,40 @@
     $(document).ready(function(){
     $('#page-content-wrapper').fadeIn();
     });
+    </script>
+
+    <script type="text/javascript">
+    // these variables create the URL for switcher in the nav menu 
+
+    const lightModeLink = enteredURL.replace('?darkmode', '');
+    const darkModeLink = lightModeLink + "?darkmode";
+
+    // loop through links on page to add '?darkmode' to internal links 
+      
+    if (darkMode) {
+      const allLinks = document.getElementsByTagName("a");
+      for (let i = 0; i < allLinks.length; i++) {
+        if (allLinks[i].href.includes('https://laurent-dinh.github.io/')
+          || allLinks[i].href.includes('http://127.0.0.1:4001/') || allLinks[i].href.includes('http://localhost:4001/')) {
+          allLinks[i].href = allLinks[i].href + '?darkmode';
+        }
+      }
+      document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
+      document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
+    }
+
+      // it's important for this to come after internal links have '?darkmode' added
+      // otherwise the switch in the nav menu to turn on light mode won't work!  
+
+    document.getElementById('colorChanger').href=lightModeLink; 
+      
+    // sets nav switcher to allow dark mode to be enabled 
+
+    if (darkMode === false) {
+      document.getElementById('colorChanger').href=darkModeLink;
+      document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
+      document.getElementsByTagName("label")[0].style="background-color: #fff; color: #333; border-color: #333";
+    }
     </script>
 
 </html>

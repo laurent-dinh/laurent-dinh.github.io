@@ -8,7 +8,31 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+  <link rel="stylesheet" id="CSS" href="{{ site.baseurl }}/style.css">
+  <script type="text/javascript">
+
+  // looks for the ?darkmode parameter 
+  // sets global variable darkMode to true or false
+
+  const enteredURL = window.location.href;
+  if (enteredURL.includes('?darkmode')) {
+    var darkMode = true; 
+  } else {
+    var darkMode = false;
+  }
+
+  // loop through links on page to add '?darkmode' to internal links 
+    
+  if (darkMode) {
+    document.getElementById('CSS').href="/style.dark.css";
+  }
+    
+  // sets nav switcher to allow dark mode to be enabled 
+
+  if (darkMode === false) {
+    document.getElementById('CSS').href="/style.css";
+  }
+  </script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="shortcut icon" href="{{ site.baseurl }}/logo.ico"/>

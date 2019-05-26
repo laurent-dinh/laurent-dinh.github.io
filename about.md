@@ -41,9 +41,9 @@ function preloadframes()
 {
   for (i = 0; i <= 100; i+=2) {
       if (i % 4 == 0) {
-        preloadImageLD('{{ site.baseurl }}/img/logo_frames/logo_cpress_' + ("000" + i).slice(-3) + '.png');
+        preloadImageLD('{{ site.baseurl }}/img/logo_frames/logo_cpress_' + ("000" + i).slice(-3) + '.svg');
       }
-      preloadImageLD('{{ site.baseurl }}/img/logo_frames/logo_draw_' + ("000" + i).slice(-3) + '.png');
+      preloadImageLD('{{ site.baseurl }}/img/logo_frames/logo_draw_' + ("000" + i).slice(-3) + '.svg');
   }
 }
 
@@ -56,7 +56,7 @@ function animate_draw()
     last_frame_time = new Date().getTime();
     draw_id += 2;
     draw_id = Math.min(100, draw_id);
-    logo_elem.style.backgroundImage='url({{ site.baseurl }}/img/logo_frames/logo_draw_' + ("000" + draw_id).slice(-3) + '.png)';
+    logo_elem.style.backgroundImage='url({{ site.baseurl }}/img/logo_frames/logo_draw_' + ("000" + draw_id).slice(-3) + '.svg)';
   }
   else if (can_draw && draw_id >= 100) {
     can_draw = false;
@@ -72,7 +72,7 @@ function animate_cpress()
     draw_id -= 4;
     draw_id = Math.max(0, draw_id);
     draw_id -= draw_id % 4;
-    logo_elem.style.backgroundImage='url({{ site.baseurl }}/img/logo_frames/logo_cpress_' + ("000" + (100 - draw_id)).slice(-3) + '.png)';
+    logo_elem.style.backgroundImage='url({{ site.baseurl }}/img/logo_frames/logo_cpress_' + ("000" + (100 - draw_id)).slice(-3) + '.svg)';
   }
   else if (can_cpress && draw_id <= 0) {
     can_cpress = false;
@@ -93,7 +93,7 @@ I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nb
 Most of my publications and reports can be found [here](https://scholar.google.ca/citations?user=h7OHSkoAAAAJ).
 
 <div
-style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_static.png'); background-size: contain; transition: background-image .000001s ease-in-out;" id="logo_sign"
+style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_frames/logo_cpress_100.svg'); background-size: contain; transition: background-image .000001s ease-in-out;" id="logo_sign"
 onmouseenter="preloadframes(); var logo_elem = document.getElementById('logo_sign'); animate_draw(this); can_draw=true;" 
 ontouchstart="preloadframes(); animate_draw(this); can_draw=true;" 
 onmouseleave="preloadframes(); animate_cpress(this); can_cpress=true;" 
