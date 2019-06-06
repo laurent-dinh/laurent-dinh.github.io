@@ -86,7 +86,7 @@ function animate_cpress()
 {:/nomarkdown}
 
 ### Laurent Dinh
-I am a research scientist at [Google Brain](http://g.co/brain) (Montréal,&nbsp;Canada). The focus of my work is currently deep generative models, geometry, probabilistic modeling, generalization and optimization. 
+I am a research scientist at [Google Brain](http://g.co/brain) (Montréal,&nbsp;Canada). The focus of my work is currently deep generative models, probabilistic modeling, generalization, and optimization. 
 
 I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nbsp;Canada), under the supervision of [Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/). Prior to that I was studying at [ECP](http://www.ecp.fr) (Paris,&nbsp;France) in [applied mathematics](http://www.centralesupelec.fr/fr/cursus-ingenieur-centralien?tab=options-filieres-3e-annee#option-mathematiques-appliquees) and at [ENS Cachan](http://www.ens-cachan.fr/) in [machine learning and computer vision](http://www.cmla.ens-cachan.fr/version-anglaise/academics/mva-master-degree-227777.kjsp). I had the privilege to work as an intern in the machine learning group led by [Nando de Freitas](http://www.cs.ox.ac.uk/people/nando.defreitas/) both at [UBC](https://www.cs.ubc.ca/) (Vancouver,&nbsp;Canada) and [DeepMind](http://deepmind.com/) (London,&nbsp;United Kingdom), and also at [Google Brain](https://research.google.com/teams/brain/) (Mountain&nbsp;View,&nbsp;US), under the supervision of [Samy Bengio](http://bengio.abracadoudou.com/).
 
