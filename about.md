@@ -86,23 +86,19 @@ function animate_cpress()
 {:/nomarkdown}
 
 ### Laurent Dinh
-I am a research scientist at [Google Brain](http://g.co/brain) (Montréal,&nbsp;Canada). The focus of my work is currently deep generative models, probabilistic modeling, generalization, and optimization. 
+I am a research scientist at [Google Brain](http://g.co/brain) (Montréal,&nbsp;Canada). The focus of my work is currently deep generative models, probabilistic modeling, and theory of deep learning. My contributions include developments to *normalizing flows*, enabling deep tractable generative modelling in continuous space, and explanations on the relevance of loss surface geometry in deep learning generalization. My current interest is learning structured generative models tractably.
 
 I obtained my PhD in deep learning at [Mila](http://mila.quebec/) (Montréal,&nbsp;Canada), under the supervision of [Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/). Prior to that I was studying at [ECP](http://www.ecp.fr) (Paris,&nbsp;France) in [applied mathematics](http://www.centralesupelec.fr/fr/cursus-ingenieur-centralien?tab=options-filieres-3e-annee#option-mathematiques-appliquees) and at [ENS Cachan](http://www.ens-cachan.fr/) in [machine learning and computer vision](http://www.cmla.ens-cachan.fr/version-anglaise/academics/mva-master-degree-227777.kjsp). I had the privilege to work as an intern in the machine learning group led by [Nando de Freitas](http://www.cs.ox.ac.uk/people/nando.defreitas/) both at [UBC](https://www.cs.ubc.ca/) (Vancouver,&nbsp;Canada) and [DeepMind](http://deepmind.com/) (London,&nbsp;United Kingdom), and also at [Google Brain](https://research.google.com/teams/brain/) (Mountain&nbsp;View,&nbsp;US), under the supervision of [Samy Bengio](http://bengio.abracadoudou.com/).
 
 Most of my publications and reports can be found [here](https://scholar.google.ca/citations?user=h7OHSkoAAAAJ).
 
-<div
-style="float: right; height: 35px; width:83px; background-image: url('{{ site.baseurl }}/img/logo_frames/logo_cpress_100.svg'); background-size: contain; transition: background-image .000001s ease-in-out;" id="logo_sign"
-onmouseenter="preloadframes(); var logo_elem = document.getElementById('logo_sign'); animate_draw(this); can_draw=true;" 
-ontouchstart="preloadframes(); animate_draw(this); can_draw=true;" 
-onmouseleave="preloadframes(); animate_cpress(this); can_cpress=true;" 
-ontouchend="preloadframes(); animate_cpress(this); can_cpress=true;" 
-ontouchcancel="preloadframes(); animate_cpress(this); can_cpress=true;"></div>
+<img id="logo_sign" onmouseenter="if (!loaded) {preloadframes();}; loaded=true;" ontouchstart="if (!loaded) {preloadframes();}; loaded=true;" src="{{ site.baseurl }}/img/logo_frames/empty.svg">
 
 <script type="text/javascript">
+var loaded = false;
 var logo_elem = document.getElementById("logo_sign");
 var last_frame_time = new Date().getTime();
 var can_draw = false;
 var can_cpress = false;
+preloadframes();
 </script>

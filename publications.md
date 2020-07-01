@@ -5,6 +5,10 @@ permalink: /reports/
 ---
 
 
+### Invertible Models and Normalizing Flows: A Retrospective Talk
+*Laurent&nbsp;Dinh*  
+A personal journey in generative modelling research. ([talk](https://iclr.cc/virtual/speaker_4.html)) 
+
 ### Discrete Flows: Invertible Generative Models of Discrete Data
 [*Dustin&nbsp;Tran*](http://dustintran.com/), [*Keyon&nbsp;Vafa*](http://keyonvafa.com/), [*Kumar&nbsp;Krishna&nbsp;Agrawal*](https://kumarkrishna.github.io/), *Laurent&nbsp;Dinh*, [*Ben&nbsp;Poole*](https://cs.stanford.edu/~poole/)  
 Flow-based models for categorical values. ([arXiv](https://arxiv.org/abs/1905.10347)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/layers/reversible_layers.py))
