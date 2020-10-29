@@ -32,10 +32,26 @@ Flow-based models for categorical values. ([arXiv](https://arxiv.org/abs/1905.10
 Using Fourier transform on invertible symmetric convolutions for better inductive biases. ([paper](http://papers.nips.cc/paper/8801-invertible-convolutional-flow))
 
 
+### Primer on Normalizing Flows
+*Laurent&nbsp;Dinh*  
+**[From Passive to Active: Generative and Reinforcement Learning with Physics](http://www.ipam.ucla.edu/programs/workshops/workshop-i-from-passive-to-active-generative-and-reinforcement-learning-with-physics/)**  
+[**(Machine Learning for Physics and the Physics of Learning)**](http://www.ipam.ucla.edu/programs/long-programs/machine-learning-for-physics-and-the-physics-of-learning/)  
+
+([talk](https://fast.wistia.net/embed/iframe/9aye5zcg8j)) ([slides](http://helper.ipam.ucla.edu/publications/mlpws1/mlpws1_16242.pdf))
+
+
 ### A RAD approach to deep mixture models
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Hugo&nbsp;Larochelle*](http://www.dmi.usherb.ca/~larocheh/index_en.html), [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp)  
 
 Non-invertible, piecewise invertible, functions for deep mixture models. ([arXiv](https://arxiv.org/abs/1903.07714))
+
+
+### Building a Tractable Generator Network
+*Laurent&nbsp;Dinh*  
+[**Workshop on Invertible Neural Nets and Normalizing Flows 2019**](https://invertibleworkshop.github.io/INNF_2019/)  
+
+Exposing the development process for coupling layers.
+([talk](https://slideslive.com/38917898/building-a-tractable-generator-network?ref=speaker-17965-popular))
 
 
 ### VideoFlow: A Flow-Based Generative Model for Video
