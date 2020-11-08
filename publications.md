@@ -5,6 +5,13 @@ permalink: /reports/
 ---
 
 
+### Perfect Density Models Cannot Guarantee Anomaly Detection
+[*Charline&nbsp;Le&nbsp;Lan*](http://whirl.cs.ox.ac.uk/member/charline-le-lan/), *Laurent&nbsp;Dinh*  
+[**I Can't Believe It's Not Better! Workshop**](https://i-cant-believe-its-not-better.github.io/) [**(Neural Information Processing Systems 2020)**](https://neurips.cc/Conferences/2020) **(oral)**  
+
+A study on the relevance of density-based anomaly detection methods. ([paper](https://drive.google.com/file/d/16XhY87qvFhJv-RcLZWf5eOcLrIMXukRL/view))
+
+
 ### Invertible Models and Normalizing Flows: A Retrospective Talk
 *Laurent&nbsp;Dinh*  
 [**International Conference on Learning Representations 2020**](https://iclr.cc/Conferences/2020/) **(keynote)**
@@ -42,6 +49,7 @@ Using Fourier transform on invertible symmetric convolutions for better inductiv
 
 ### A RAD approach to deep mixture models
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Hugo&nbsp;Larochelle*](http://www.dmi.usherb.ca/~larocheh/index_en.html), [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp)  
+[**Deep Generative Models for Highly Structured Data**](https://deep-gen-struct.github.io/) [**(International Conference in Learning Representations 2019)**](https://iclr.cc/Conferences/2019)  
 
 Non-invertible, piecewise invertible, functions for deep mixture models. ([arXiv](https://arxiv.org/abs/1903.07714))
 
@@ -56,7 +64,7 @@ Exposing the development process for coupling layers.
 
 ### VideoFlow: A Flow-Based Generative Model for Video
 [*Manoj&nbsp;Kumar*](https://manojbits.wordpress.com/), [*Mohammad&nbsp;Babaeizadeh*](https://scholar.google.ca/citations?user=3Y4egcYAAAAJ), [*Dumitru&nbsp;Erhan*](http://www.dumitru.ca/), [*Chelsea&nbsp;Finn*](http://people.eecs.berkeley.edu/~cbfinn/), [*Sergey&nbsp;Levine*](https://people.eecs.berkeley.edu/~svlevine/), *Laurent&nbsp;Dinh*, [*Durk&nbsp;Kingma*](http://dpkingma.com/)  
-[**International Conference in Learning Representations 2020**](https://iclr.cc/Conferences/2020) **(conference track)**  
+[**International Conference in Learning Representations 2020**](https://iclr.cc/Conferences/2020)  
 
 Applying flow-based models to video prediction. ([arXiv](https://arxiv.org/abs/1903.01434)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/video/next_frame_glow.py))
 
@@ -83,7 +91,7 @@ Through simple reasonings, we show several failure modes in connecting curvature
 
 ### Density estimation using Real NVP
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/)  
-[**Deep Learning Symposium (Neural Information Processing Systems) 2016**](https://sites.google.com/site/nips2016deeplearnings/) **(oral)**  
+[**Deep Learning Symposium**](https://sites.google.com/site/nips2016deeplearnings/) [**(Neural Information Processing Systems 2016)**](https://neurips.cc/Conferences/2016) **(oral)**  
 [**International Conference in Learning Representations 2017**](http://www.iclr.cc/doku.php?id=iclr2017:main) **(conference track)**
 
 We use invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling in high-dimensional space.  
