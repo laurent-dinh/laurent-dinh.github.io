@@ -51,6 +51,7 @@
         }
       }
       document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
+      document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-sun");
       document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
     }
 
@@ -63,6 +64,7 @@
 
     if (darkMode === false) {
       document.getElementById('colorChanger').href=darkModeLink;
+      document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-moon");
       document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
       document.getElementsByTagName("label")[0].style="background-color: #fff; color: #333; border-color: #333";
     }

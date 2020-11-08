@@ -86,7 +86,7 @@ We train predictive models on proprioceptive information and show they represent
 *Laurent&nbsp;Dinh*, [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/), [*Yoshua&nbsp;Bengio*](https://yoshuabengio.org/)  
 [**International Conference on Machine Learning 2017**](https://2017.icml.cc/) **(oral)**  
 
-Through simple reasonings, we show several failure modes in connecting curvature to generalization. ([arXiv](https://arxiv.org/abs/1703.04933)) ([slides](http://goo.gl/Be2jmo)) ([poster](https://goo.gl/goSpCX))
+Through simple reasonings, we show several failure modes in connecting curvature to generalization. ([arXiv](https://arxiv.org/abs/1703.04933)) ([talk](https://vimeo.com/237275513)) ([slides](http://goo.gl/Be2jmo)) ([poster](https://goo.gl/goSpCX))
 
 
 ### Density estimation using Real NVP

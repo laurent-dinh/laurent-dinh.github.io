@@ -11,20 +11,19 @@
 
       <div id="picture" style="background-image: url({{ site.url }}/img/profile.jpg)"></div>
       <p>{{site.description}}</p>
-      <a href='?darkmode' id='colorChanger'>
-        <div id="logo" style="background-image: url({{ site.url }}/img/logo_dark.svg)"></div>
-      </a>
+      <div id="logo" style="background-image: url({{ site.url }}/img/logo_dark.svg)"></div>
 
       <hr>
 
       <div id="social-icons">
         <ul>
-            <li><a href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="http://github.com/{{ site.github }}"><i class="fa fa-github"></i></a></li>
+            <li><a href="http://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter"></i></a></li>
+            <!-- <li><a href="https://linkedin.com/in/{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a></li> -->
+            <li><a href="http://github.com/{{ site.github }}"><i class="fab fa-github"></i></a></li>
             <li><a href="https://scholar.google.ca/citations?user={{ site.scholar }}"><i class="ai ai-google-scholar-square"></i>
 </a></li>
-            <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="?darkmode" id='colorChanger'><i class="fas fa-sun"></i></a></li>
         </ul>
       </div>
 
