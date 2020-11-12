@@ -46,8 +46,11 @@
       const allLinks = document.getElementsByTagName("a");
       for (let i = 0; i < allLinks.length; i++) {
         if (allLinks[i].href.includes('https://laurent-dinh.github.io/')
-          || allLinks[i].href.includes('http://127.0.0.1:4001/') || allLinks[i].href.includes('http://localhost:4001/')) {
-          allLinks[i].href = allLinks[i].href + '?darkmode';
+          || allLinks[i].href.includes('http://127.0.0.1:4001/') || allLinks[i].href.includes('http://localhost:4001/')
+          || allLinks[i].href.includes('https://127.0.0.1:4001/') || allLinks[i].href.includes('https://localhost:4001/')) {
+          // allLinks[i].href = allLinks[i].href + '?darkmode';
+          var split_href = allLinks[i].href.split('#');
+          allLinks[i].href = [split_href[0] + '?darkmode'].concat(split_href.slice(1, split_href.length)).join('#');
         }
       }
       document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";

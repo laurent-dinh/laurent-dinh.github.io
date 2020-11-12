@@ -39,6 +39,20 @@ height="300.0pt" width="675.0pt" viewBox="-0.05 -0.05 1.35 0.6">
         
   </pattern>
 </defs>
+
+<defs>
+  <pattern id="neutral-pattern" x="0" y="0" width="0.01" height="0.01" patternUnits="userSpaceOnUse">
+        
+    <rect x="0" cy="0" height="0.01" width="0.01"
+    style="fill:rgb(230, 230, 230);stroke-width:0;stroke:rgb(0,0,0);" />
+    <line x1="0.01" x2="0.01" y1="0" y2="0.01"
+    style="stroke:rgb(0,0,0);stroke-width:0.001;stroke-linejoin:round;stroke-linecap:square;"/>
+    <line x1="0" x2="0" y1="0" y2="0.01"
+    style="stroke:rgb(0,0,0);stroke-width:0.001;stroke-linejoin:round;stroke-linecap:square;"/>
+        
+  </pattern>
+</defs>
+<rect height="0.5" width="1" x="0" y="0" id="back-in-out-plot" style="fill:url(#neutral-pattern);stroke-width:0;stroke:rgb(0,0,0);"/>
 <rect height="0.5" width="0" x="0.9303903579711914" y="0" id="typ-rect-up" style="fill:url(#out-pattern);stroke-width:0;stroke:rgb(0,0,0);"/>
 <rect height="0.5" width="0" x="0.10317707061767578" y="0" id="typ-rect-mid" style="fill:url(#in-pattern);stroke-width:0;stroke:rgb(0,0,0);"/>
 <rect height="0.5" width="0" x="0" y="0" id="typ-rect-down" style="fill:url(#out-pattern);stroke-width:0;stroke:rgb(0,0,0);"/>
@@ -88,16 +102,16 @@ height="300.0pt" width="675.0pt" viewBox="-0.05 -0.05 1.35 0.6">
     xlink:href="#ds-rect-up" attributeName="x" from="1" to="0.2521486282348633" dur="0.0001s" begin="ds-label.mouseleave + 1s;ds-label.mouseout + 1s;ds-label.touchend + 1s;" fill="freeze"
     id="ds-off-up-epilogue" />
 <animate 
-    xlink:href="#typ-label" attributeName="opacity" from="1" to="0.25" dur="0.25s" begin="ds-label.mouseenter + 0s;ds-label.mouseover + 0s;ds-label.touchstart + 0s;" fill="freeze"
+    xlink:href="#typ-label-txt" attributeName="opacity" from="1" to="0.25" dur="0.25s" begin="ds-label.mouseenter + 0s;ds-label.mouseover + 0s;ds-label.touchstart + 0s;" fill="freeze"
     id="ds-on-label" />
 <animate 
-    xlink:href="#typ-label" attributeName="opacity" from="0.25" to="1" dur="0.25s" begin="ds-label.mouseleave + 0s;ds-label.mouseout + 0s;ds-label.touchend + 0s;" fill="freeze"
+    xlink:href="#typ-label-txt" attributeName="opacity" from="0.25" to="1" dur="0.25s" begin="ds-label.mouseleave + 0s;ds-label.mouseout + 0s;ds-label.touchend + 0s;" fill="freeze"
     id="ds-off-label" />
 <animate 
-    xlink:href="#ds-label" attributeName="opacity" from="1" to="0.25" dur="0.25s" begin="typ-label.mouseenter + 0s;typ-label.mouseover + 0s;typ-label.touchstart + 0s;" fill="freeze"
+    xlink:href="#ds-label-txt" attributeName="opacity" from="1" to="0.25" dur="0.25s" begin="typ-label.mouseenter + 0s;typ-label.mouseover + 0s;typ-label.touchstart + 0s;" fill="freeze"
     id="typ-on-label" />
 <animate 
-    xlink:href="#ds-label" attributeName="opacity" from="0.25" to="1" dur="0.25s" begin="typ-label.mouseleave + 0s;typ-label.mouseout + 0s;typ-label.touchend + 0s;" fill="freeze"
+    xlink:href="#ds-label-txt" attributeName="opacity" from="0.25" to="1" dur="0.25s" begin="typ-label.mouseleave + 0s;typ-label.mouseout + 0s;typ-label.touchend + 0s;" fill="freeze"
     id="typ-off-label" />
 <animate 
       xlink:href="#typ-rect-down" attributeName="width" from="0" to="0.10317707061767578" dur="0.10317707061767578s" begin="typ-label.mouseenter + 0s;typ-label.mouseover + 0s;typ-label.touchstart + 0s;" fill="freeze"
@@ -173,8 +187,12 @@ height="300.0pt" width="675.0pt" viewBox="-0.05 -0.05 1.35 0.6">
       id="typ-high-off-epilogue-x2" />
 </svg>
 <rect height="0.5" width="1" x="0" y="0" id="frame" style="fill:none;stroke-width:0.0025;stroke:rgb(0,0,0);"/>
-<text x="1.05" y="0.125" font-size="0.03" id="ds-label">Density scoring</text>
-<text x="1.05" y="0.2" font-size="0.03" id="typ-label">Typicality</text>
+<text x="1.05" y="0.125" font-size="0.03" id="ds-label-txt">Density scoring</text>
+<text x="1.05" y="0.2" font-size="0.03" id="typ-label-txt">Typicality</text>
+<rect x="1.05" y="0.095" width="0.21" height="0.04" id="ds-label"
+    style="fill:rgb(0,0,0);opacity:0;stroke-width:0.0025;stroke:rgb(0,0,0);"/>
+<rect x="1.05" y="0.17" width="0.13" height="0.04" id="typ-label"
+    style="fill:rgb(0,0,0);opacity:0;stroke-width:0.0025;stroke:rgb(0,0,0);"/>
 <rect x="1.05" y="0.25" width="0.05" height="0.05"
     style="fill:url(#in-pattern);stroke-width:0.0025;stroke:rgb(0,0,0);"/>
 <rect x="1.05" y="0.325" width="0.05" height="0.05"
