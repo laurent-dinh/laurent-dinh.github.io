@@ -27,6 +27,7 @@ Stochastic augmentation of normalizing flows. ([arXiv](https://arxiv.org/abs/200
 
 ### Discrete Flows: Invertible Generative Models of Discrete Data
 [*Dustin&nbsp;Tran*](http://dustintran.com/), [*Keyon&nbsp;Vafa*](http://keyonvafa.com/), [*Kumar&nbsp;Krishna&nbsp;Agrawal*](https://kumarkrishna.github.io/), *Laurent&nbsp;Dinh*, [*Ben&nbsp;Poole*](https://cs.stanford.edu/~poole/)  
+[**Deep Generative Models for Highly Structured Data**](https://deep-gen-struct.github.io/) [**(International Conference in Learning Representations 2019)**](https://iclr.cc/Conferences/2019)  
 [**Neural Information Processing Systems 2019**](https://neurips.cc/Conferences/2019)
 
 Flow-based models for categorical values. ([arXiv](https://arxiv.org/abs/1905.10347)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/layers/reversible_layers.py))
@@ -56,7 +57,7 @@ Non-invertible, piecewise invertible, functions for deep mixture models. ([arXiv
 
 ### Building a Tractable Generator Network
 *Laurent&nbsp;Dinh*  
-[**Workshop on Invertible Neural Nets and Normalizing Flows 2019**](https://invertibleworkshop.github.io/INNF_2019/)  
+[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://2019.icml.cc/)  
 
 Exposing the development process for coupling layers.
 ([talk](https://slideslive.com/38917898/building-a-tractable-generator-network?ref=speaker-17965-popular))
@@ -64,9 +65,10 @@ Exposing the development process for coupling layers.
 
 ### VideoFlow: A Flow-Based Generative Model for Video
 [*Manoj&nbsp;Kumar*](https://manojbits.wordpress.com/), [*Mohammad&nbsp;Babaeizadeh*](https://scholar.google.ca/citations?user=3Y4egcYAAAAJ), [*Dumitru&nbsp;Erhan*](http://www.dumitru.ca/), [*Chelsea&nbsp;Finn*](http://people.eecs.berkeley.edu/~cbfinn/), [*Sergey&nbsp;Levine*](https://people.eecs.berkeley.edu/~svlevine/), *Laurent&nbsp;Dinh*, [*Durk&nbsp;Kingma*](http://dpkingma.com/)  
+[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://2019.icml.cc/) **(oral)**  
 [**International Conference in Learning Representations 2020**](https://iclr.cc/Conferences/2020)  
 
-Applying flow-based models to video prediction. ([arXiv](https://arxiv.org/abs/1903.01434)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/video/next_frame_glow.py))
+Applying flow-based models to video prediction. ([arXiv](https://arxiv.org/abs/1903.01434)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/video/next_frame_glow.py)) ([talk @ INNF @ ICML 2019](https://slideslive.com/38917904/videoflow-a-flowbased-generative-model-for-video))
 
 
 ### Reparametrization in Deep Learning
