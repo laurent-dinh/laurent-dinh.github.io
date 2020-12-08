@@ -9,7 +9,7 @@ permalink: /reports/
 [*Charline&nbsp;Le&nbsp;Lan*](http://whirl.cs.ox.ac.uk/member/charline-le-lan/), *Laurent&nbsp;Dinh*  
 [**I Can't Believe It's Not Better! Workshop**](https://i-cant-believe-its-not-better.github.io/) [**(Neural Information Processing Systems 2020)**](https://neurips.cc/Conferences/2020) **(oral)**  
 
-A study on the relevance of density-based anomaly detection methods. ([paper](https://drive.google.com/file/d/16XhY87qvFhJv-RcLZWf5eOcLrIMXukRL/view))
+A study on the relevance of density-based anomaly detection methods. ([arXiv](https://arxiv.org/abs/2012.03808))
 
 
 ### Invertible Models and Normalizing Flows: A Retrospective Talk
