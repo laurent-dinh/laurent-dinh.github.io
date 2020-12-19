@@ -43,7 +43,7 @@ Using Fourier transform on invertible symmetric convolutions for better inductiv
 ### Primer on Normalizing Flows
 *Laurent&nbsp;Dinh*  
 **[From Passive to Active: Generative and Reinforcement Learning with Physics](http://www.ipam.ucla.edu/programs/workshops/workshop-i-from-passive-to-active-generative-and-reinforcement-learning-with-physics/)**  
-[**(Machine Learning for Physics and the Physics of Learning)**](http://www.ipam.ucla.edu/programs/long-programs/machine-learning-for-physics-and-the-physics-of-learning/)  
+[**(Machine Learning for Physics and the Physics of Learning)**](http://www.ipam.ucla.edu/programs/long-programs/machine-learning-for-physics-and-the-physics-of-learning/) (invited talk)  
 
 ([talk](https://fast.wistia.net/embed/iframe/9aye5zcg8j)) ([slides](http://helper.ipam.ucla.edu/publications/mlpws1/mlpws1_16242.pdf))
 
@@ -57,7 +57,7 @@ Non-invertible, piecewise invertible, functions for deep mixture models. ([arXiv
 
 ### Building a Tractable Generator Network
 *Laurent&nbsp;Dinh*  
-[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://2019.icml.cc/)  
+[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://2019.icml.cc/) (invited talk)  
 
 Exposing the development process for coupling layers.
 ([talk](https://slideslive.com/38917898/building-a-tractable-generator-network?ref=speaker-17965-popular))
@@ -69,6 +69,11 @@ Exposing the development process for coupling layers.
 [**International Conference in Learning Representations 2020**](https://iclr.cc/Conferences/2020)  
 
 Applying flow-based models to video prediction. ([arXiv](https://arxiv.org/abs/1903.01434)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/video/next_frame_glow.py)) ([talk @ INNF @ ICML 2019](https://slideslive.com/38917904/videoflow-a-flowbased-generative-model-for-video))
+
+
+### Conference ticket allocation via non-uniform random selection to address systemic biases
+[*Jessica&nbsp;Thompson*](http://thompsonj.github.io/about/), *Laurent&nbsp;Dinh*, [*Layla&nbsp;El&nbsp;Asri*](https://speakingmachines.com/), [*Nicolas&nbsp;Le&nbsp;Roux*](http://nicolas.le-roux.name/)  
+[**Critiquing and Correcting Trends in Machine Learning**](https://ml-critique-correct.github.io/) [**(Neural Information Processing Systems 2018)**](https://neurips.cc/Conferences/2018) **(spotlight)**  
 
 
 ### Reparametrization in Deep Learning
