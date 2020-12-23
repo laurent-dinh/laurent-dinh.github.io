@@ -139,7 +139,7 @@ label[data-function*='swipe'] {
 }
 
 
-@media(min-width:768px) {
+@media screen and (min-width:769px) {
   .post, .post-container {
     padding-left: 180px;
     transition: 0.3s padding ease-out;
@@ -176,7 +176,7 @@ label[data-function*='swipe'] {
     font-weight: normal;
     color: #343434;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -260,6 +260,17 @@ label[data-function*='swipe'] {
   background-size: 60px auto;
   background-position: 7px 0px;
 }
+
+@media print {
+  .sidebar {
+    display: none !important;
+  }
+  .btn {
+    display: none !important;
+  }
+}
+
+a[href]:after { content : "" }
 
 
 @media(max-width:768px) {

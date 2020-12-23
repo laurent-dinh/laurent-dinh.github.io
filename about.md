@@ -11,16 +11,16 @@ permalink: /
   margin-right: auto;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:769px) {
   .post, .post-container {
     padding-left: 180px;
   }
 }
 
-
 @media(max-width:768px) {
   .post, .post-container {
     margin-left: auto;
+    max-width: 512px;
   }
 }
 </style>

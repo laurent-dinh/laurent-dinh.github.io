@@ -1,6 +1,6 @@
 # Site settings
 title: Thesis by Blogpost
-email: laurentdinh@google.com
+email: lastname.firstname@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 url: "https://laurent-dinh.github.io/"

@@ -57,6 +57,16 @@
       document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-sun");
       document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
     }
+    
+    const allCodes = document.getElementsByTagName("code");
+    for (let i = 0; i < allCodes.length; i++) {
+      if (darkMode) {
+        allCodes[i].style.setProperty("background-color", "#1d161b");
+      }
+      else {
+        allCodes[i].style.setProperty("background-color", "#f9f2f4");
+      }
+    }
 
       // it's important for this to come after internal links have '?darkmode' added
       // otherwise the switch in the nav menu to turn on light mode won't work!  

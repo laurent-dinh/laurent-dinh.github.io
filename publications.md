@@ -16,11 +16,12 @@ A study on the relevance of density-based anomaly detection methods. ([arXiv](ht
 *Laurent&nbsp;Dinh*  
 [**International Conference on Learning Representations 2020**](https://iclr.cc/Conferences/2020/) **(keynote)**
 
-A personal journey in generative modelling research. ([talk](https://iclr.cc/virtual/speaker_4.html)) ([slides](https://docs.google.com/presentation/d/1H2ICaHt77lrDPenbusDXJCRfvmGbIqs-8PjIZ8gap9I/edit?usp=sharing)) 
+A personal journey in generative modelling research. ([talk](https://iclr.cc/virtual/speaker_4.html)) ([slides](https://docs.google.com/presentation/d/1H2ICaHt77lrDPenbusDXJCRfvmGbIqs-8PjIZ8gap9I/view)) 
 
 
 ### Augmented Normalizing Flows: Bridging the Gap Between Generative Flows and Latent Variable Models
 [*Chin-Wei&nbsp;Huang*](https://www.chinweihuang.com/), *Laurent&nbsp;Dinh*, [*Aaron&nbsp;Courville*](https://aaroncourville.wordpress.com/)
+[**Workshop on Integration of Deep Neural Models and Differential Equations**](http://iclr2020deepdiffeq.rice.edu/) [**(International Conference on Learning Representations 2020)**](https://iclr.cc/Conferences/2020/) *(oral)*
 
 Stochastic augmentation of normalizing flows. ([arXiv](https://arxiv.org/abs/2002.07101))
 
@@ -43,9 +44,17 @@ Using Fourier transform on invertible symmetric convolutions for better inductiv
 ### Primer on Normalizing Flows
 *Laurent&nbsp;Dinh*  
 **[From Passive to Active: Generative and Reinforcement Learning with Physics](http://www.ipam.ucla.edu/programs/workshops/workshop-i-from-passive-to-active-generative-and-reinforcement-learning-with-physics/)**  
-[**(Machine Learning for Physics and the Physics of Learning)**](http://www.ipam.ucla.edu/programs/long-programs/machine-learning-for-physics-and-the-physics-of-learning/) (invited talk)  
+[**(Machine Learning for Physics and the Physics of Learning)**](http://www.ipam.ucla.edu/programs/long-programs/machine-learning-for-physics-and-the-physics-of-learning/) **(invited talk)**  
 
-([talk](https://fast.wistia.net/embed/iframe/9aye5zcg8j)) ([slides](http://helper.ipam.ucla.edu/publications/mlpws1/mlpws1_16242.pdf))
+([talk](https://fast.wistia.net/embed/iframe/9aye5zcg8j)) ([slides](https://bit.ly/3hdbtcM))
+
+
+### Building a Tractable Generator Network
+*Laurent&nbsp;Dinh*  
+[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://icml.cc/Conferences/2019) **(invited talk)**  
+
+Exposing the development process for coupling layers.
+([talk](https://slideslive.com/38917898/building-a-tractable-generator-network?ref=speaker-17965-popular)) ([slides](https://bit.ly/3rniUmn))
 
 
 ### A RAD approach to deep mixture models
@@ -55,17 +64,9 @@ Using Fourier transform on invertible symmetric convolutions for better inductiv
 Non-invertible, piecewise invertible, functions for deep mixture models. ([arXiv](https://arxiv.org/abs/1903.07714))
 
 
-### Building a Tractable Generator Network
-*Laurent&nbsp;Dinh*  
-[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://2019.icml.cc/) (invited talk)  
-
-Exposing the development process for coupling layers.
-([talk](https://slideslive.com/38917898/building-a-tractable-generator-network?ref=speaker-17965-popular))
-
-
 ### VideoFlow: A Flow-Based Generative Model for Video
 [*Manoj&nbsp;Kumar*](https://manojbits.wordpress.com/), [*Mohammad&nbsp;Babaeizadeh*](https://scholar.google.ca/citations?user=3Y4egcYAAAAJ), [*Dumitru&nbsp;Erhan*](http://www.dumitru.ca/), [*Chelsea&nbsp;Finn*](http://people.eecs.berkeley.edu/~cbfinn/), [*Sergey&nbsp;Levine*](https://people.eecs.berkeley.edu/~svlevine/), *Laurent&nbsp;Dinh*, [*Durk&nbsp;Kingma*](http://dpkingma.com/)  
-[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://2019.icml.cc/) **(oral)**  
+[**Workshop on Invertible Neural Nets and Normalizing Flows**](https://invertibleworkshop.github.io/INNF_2019/) [**(International Conference on Machine Learning 2019)**](https://icml.cc/Conferences/2019) **(oral)**  
 [**International Conference in Learning Representations 2020**](https://iclr.cc/Conferences/2020)  
 
 Applying flow-based models to video prediction. ([arXiv](https://arxiv.org/abs/1903.01434)) ([code](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/video/next_frame_glow.py)) ([talk @ INNF @ ICML 2019](https://slideslive.com/38917904/videoflow-a-flowbased-generative-model-for-video))
@@ -91,7 +92,7 @@ We train predictive models on proprioceptive information and show they represent
 
 ### Sharp Minima Can Generalize For Deep Nets
 *Laurent&nbsp;Dinh*, [*Razvan&nbsp;Pascanu*](https://sites.google.com/view/razp), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/), [*Yoshua&nbsp;Bengio*](https://yoshuabengio.org/)  
-[**International Conference on Machine Learning 2017**](https://2017.icml.cc/) **(oral)**  
+[**International Conference on Machine Learning 2017**](https://icml.cc/Conferences/2017) **(oral)**  
 
 Through simple reasonings, we show several failure modes in connecting curvature to generalization. ([arXiv](https://arxiv.org/abs/1703.04933)) ([talk](https://vimeo.com/237275513)) ([slides](http://goo.gl/Be2jmo)) ([poster](https://goo.gl/goSpCX))
 
@@ -99,10 +100,10 @@ Through simple reasonings, we show several failure modes in connecting curvature
 ### Density estimation using Real NVP
 *Laurent&nbsp;Dinh*, [*Jascha&nbsp;Sohl-Dickstein*](http://www.sohldickstein.com/), [*Samy&nbsp;Bengio*](http://bengio.abracadoudou.com/)  
 [**Deep Learning Symposium**](https://sites.google.com/site/nips2016deeplearnings/) [**(Neural Information Processing Systems 2016)**](https://neurips.cc/Conferences/2016) **(oral)**  
-[**International Conference in Learning Representations 2017**](http://www.iclr.cc/doku.php?id=iclr2017:main) **(conference track)**
+[**International Conference in Learning Representations 2017**](https://iclr.cc/archive/www/2017) **(conference track)**
 
 We use invertible neural network for deep generative model with latent space, tractable log-likelihood, inference and sampling in high-dimensional space.  
-([arXiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([talk @ Twitter Boston](https://www.periscope.tv/w/1ypKdAVmbEpGW)) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/edit?usp=sharing)) ([poster](https://docs.google.com/presentation/d/1e0R7Z0Z0K-3KZdA2Lw3Vt_bl_jBCpIwuqq1VZN8_5OE/edit?usp=sharing)) ([code](https://github.com/tensorflow/models/tree/archive/research/real_nvp))
+([arXiv](http://arxiv.org/abs/1605.08803)) ([visualizations]({{ site.baseurl }}{% post_url 2016-07-12-real-nvp-visualization %})) ([talk @ Twitter Boston](https://www.periscope.tv/w/1ypKdAVmbEpGW)) ([slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/view)) ([poster](https://docs.google.com/presentation/d/1e0R7Z0Z0K-3KZdA2Lw3Vt_bl_jBCpIwuqq1VZN8_5OE/view)) ([code](https://github.com/tensorflow/models/tree/archive/research/real_nvp))
 
 ### Deep independence network analysis of structural brain imaging: A simulation study
 [*Eduardo Castro*](http://mialab.mrn.org/lab-members/eduardo-castro.html), [*Devon Hjelm*](https://rdevon.github.io/), [*Sergey Plis*](http://www.mrn.org/people/sergey-plis/principal-investigators), *Laurent Dinh*, [*Jessica Turner*](http://www.mrn.org/people/jessica-turner/principal-investigators), [*Vince Calhoun*](http://www.mrn.org/people/http-www.mrn.org-people-vince-calhoun-principal-investigators/principal-investigators)  
@@ -120,14 +121,14 @@ Variational auto-encoder meets Deep-RNN. ([arXiv](http://arxiv.org/abs/1506.0221
 
 ### NICE: Non-linear Independent Components Estimation
 *Laurent&nbsp;Dinh*, [*David&nbsp;Krueger*](https://mila.quebec/en/person/david-scott-krueger/), [*Yoshua&nbsp;Bengio*](https://yoshuabengio.org/)  
-[**International Conference in Learning Representations 2015**](http://www.iclr.cc/doku.php?id=iclr2015:main) **(workshop track)**
+[**International Conference in Learning Representations 2015**](https://iclr.cc/archive/www/2015) **(workshop track)**
 
 Tractable maximum likelihood with deep neural networks. ([arXiv](http://arxiv.org/abs/1410.8516)) ([code](https://github.com/laurent-dinh/nice)) ([talk @ Berkeley](https://archive.org/details/Redwood_Center_2015_10_14_Laurent_Dinh))
 
 
 ### Techniques for Learning Binary Stochastic Feedforward Neural Networks
 [*Tapani&nbsp;Raiko*](http://users.ics.aalto.fi/praiko/), [*Mathias&nbsp;Berglund*](https://www.tek.fi/fi/uutishuone/tek-120-vuotta/osaajat/mathias-berglund), [*Guillaume&nbsp;Alain*](https://mila.quebec/en/person/guillaume-alain-2/), *Laurent&nbsp;Dinh*  
-[**International Conference in Learning Representations 2015**](http://www.iclr.cc/doku.php?id=iclr2015:main) **(conference track)**
+[**International Conference in Learning Representations 2015**](https://iclr.cc/archive/www/2015) **(conference track)**
 
 We explore gradient estimators for binary stochastic neural network. ([arXiv](http://arxiv.org/abs/1406.2989))
 
