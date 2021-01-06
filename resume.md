@@ -88,7 +88,7 @@ Research Scientist, [Google Brain](http://g.co/brain)
 ### Publications and Preprints
 [**Perfect Density Models Cannot Guarantee Anomaly Detection**](https://arxiv.org/abs/2012.03808)   
 [Charline&nbsp;Le&nbsp;Lan](http://whirl.cs.ox.ac.uk/member/charline-le-lan/), Laurent&nbsp;Dinh   
-[*I Can't Believe It's Not Better! Workshop*](https://i-cant-believe-its-not-better.github.io/) [*(Neural Information Processing Systems 2020)*](https://neurips.cc/Conferences/2020) *(oral)* 
+[*I Can't Believe It's Not Better! Workshop*](https://i-cant-believe-its-not-better.github.io/) [*(Neural Information Processing Systems 2020)*](https://neurips.cc/Conferences/2020) *(oral,* [*Entropic Paper Award*](https://i-cant-believe-its-not-better.github.io/awards/)*)*
 
 [**Augmented Normalizing Flows: Bridging the Gap Between Generative Flows and Latent Variable Models**](https://arxiv.org/abs/2002.07101)  
 [Chin-Wei&nbsp;Huang](https://www.chinweihuang.com/), Laurent&nbsp;Dinh, [Aaron&nbsp;Courville](https://aaroncourville.wordpress.com/)
