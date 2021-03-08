@@ -111,7 +111,7 @@ Laurent&nbsp;Dinh, [Jascha&nbsp;Sohl-Dickstein](http://www.sohldickstein.com/), 
 [*Deep Generative Models for Highly Structured Data*](https://deep-gen-struct.github.io/) [*(International Conference in Learning Representations 2019)*](https://iclr.cc/Conferences/2019)  
 
 [**VideoFlow: A Flow-Based Generative Model for Video**](https://arxiv.org/abs/1903.01434)  
-[Manoj&nbsp;Kumar](https://manojbits.wordpress.com/), [Mohammad&nbsp;Babaeizadeh](https://scholar.google.ca/citations?user=3Y4egcYAAAAJ), [Dumitru&nbsp;Erhan](http://www.dumitru.ca/), [Chelsea&nbsp;Finn](http://people.eecs.berkeley.edu/~cbfinn/), [Sergey&nbsp;Levine](https://people.eecs.berkeley.edu/~svlevine/), Laurent&nbsp;Dinh, [Durk&nbsp;Kingma](http://dpkingma.com/)  
+[Manoj&nbsp;Kumar](https://manojbits.wordpress.com/), [Mohammad&nbsp;Babaeizadeh](https://scholar.google.ca/citations?user=3Y4egcYAAAAJ), [Dumitru&nbsp;Erhan](http://www.dumitru.ca/), [Chelsea&nbsp;Finn](https://ai.stanford.edu/~cbfinn/), [Sergey&nbsp;Levine](https://people.eecs.berkeley.edu/~svlevine/), Laurent&nbsp;Dinh, [Durk&nbsp;Kingma](http://dpkingma.com/)  
 [*Workshop on Invertible Neural Nets and Normalizing Flows*](https://invertibleworkshop.github.io/INNF_2019/) [*(International Conference on Machine Learning 2019)*](https://icml.cc/Conferences/2019) *(oral)*  
 [*International Conference in Learning Representations 2020*](https://iclr.cc/Conferences/2020)  
 
