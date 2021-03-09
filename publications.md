@@ -2,6 +2,7 @@
 layout: page
 title: Reports
 permalink: /reports/
+ignore_link: true
 ---
 
 

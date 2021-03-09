@@ -39,11 +39,30 @@
     var body = document.body,
         html = document.documentElement;
 
-    var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                           html.clientHeight, html.scrollHeight, html.offsetHeight );
+    var height = Math.max( body.scrollHeight || 0, body.offsetHeight || 0, 
+                           html.clientHeight || 0, html.scrollHeight || 0,
+                           html.offsetHeight || 0 );
     document.getElementsByClassName("sidebar")[0].style.height = height + "px";
   }
-  window.onresize = resizeSideBar;
+
+  function fixSideBar() {
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    var bottom_bar = 650; 
+    // document.getElementsByClassName(
+    //   "sidebar")[0].getElementsByTagName(
+    //   "p")[3].getBoundingClientRect()["y"];
+
+    resizeSideBar();
+    if (bottom_bar < vh && vw > 768) {
+      document.getElementsByClassName("sidebar")[0].style.position = "fixed";
+    }
+    else {
+      document.getElementsByClassName("sidebar")[0].style.position = "";
+    }
+  }
+
+  window.onresize = fixSideBar;
   </script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

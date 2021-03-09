@@ -38,7 +38,9 @@
     // these variables create the URL for switcher in the nav menu 
 
     const lightModeLink = enteredURL.replace('?darkmode', '');
-    const darkModeLink = lightModeLink + "?darkmode";
+    const lightModeLinkSplit = lightModeLink.split('#');
+    const darkModeLink = [lightModeLinkSplit[0] + '?darkmode'].concat(
+      lightModeLinkSplit.slice(1, lightModeLinkSplit.length)).join('#');
 
     // loop through links on page to add '?darkmode' to internal links 
       
@@ -50,7 +52,8 @@
           || allLinks[i].href.includes('https://127.0.0.1:4001/') || allLinks[i].href.includes('https://localhost:4001/')) {
           // allLinks[i].href = allLinks[i].href + '?darkmode';
           var split_href = allLinks[i].href.split('#');
-          allLinks[i].href = [split_href[0] + '?darkmode'].concat(split_href.slice(1, split_href.length)).join('#');
+          allLinks[i].href = [split_href[0] + '?darkmode'].concat(
+            split_href.slice(1, split_href.length)).join('#');
         }
       }
       document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
@@ -81,8 +84,8 @@
       document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
       document.getElementsByTagName("label")[0].style="background-color: #fff; color: #333; border-color: #333";
     }
-    
-    resizeSideBar();
+
+    fixSideBar();
     </script>
 
 </html>
