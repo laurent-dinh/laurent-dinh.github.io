@@ -5,6 +5,10 @@
 
 /* ------------ Core Style -------------- */
 
+html
+{
+    background-color: #ffffff;
+}
 
 body
 {
@@ -267,6 +271,9 @@ label[data-function*='swipe'] {
   }
   .btn {
     display: none !important;
+  }
+  .content {
+    padding: 30px;
   }
 }
 

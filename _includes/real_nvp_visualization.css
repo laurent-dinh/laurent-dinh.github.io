@@ -1,6 +1,7 @@
 div.container
 {
   overflow: scroll;
+  width: 100%;
 }
 
 .center-image

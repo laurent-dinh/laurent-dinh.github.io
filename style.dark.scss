@@ -276,6 +276,9 @@ label[data-function*='swipe'] {
   .btn {
     display: none !important;
   }
+  .content {
+    padding: 30px;
+  }
 }
 
 a[href]:after { content : "" }

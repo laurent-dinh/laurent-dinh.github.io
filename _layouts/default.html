@@ -35,57 +35,9 @@
     </script>
 
     <script type="text/javascript">
-    // these variables create the URL for switcher in the nav menu 
-
-    const lightModeLink = enteredURL.replace('?darkmode', '');
-    const lightModeLinkSplit = lightModeLink.split('#');
-    const darkModeLink = [lightModeLinkSplit[0] + '?darkmode'].concat(
-      lightModeLinkSplit.slice(1, lightModeLinkSplit.length)).join('#');
-
-    // loop through links on page to add '?darkmode' to internal links 
-      
-    if (darkMode) {
-      const allLinks = document.getElementsByTagName("a");
-      for (let i = 0; i < allLinks.length; i++) {
-        if (allLinks[i].href.includes('https://laurent-dinh.github.io/')
-          || allLinks[i].href.includes('http://127.0.0.1:4001/') || allLinks[i].href.includes('http://localhost:4001/')
-          || allLinks[i].href.includes('https://127.0.0.1:4001/') || allLinks[i].href.includes('https://localhost:4001/')) {
-          // allLinks[i].href = allLinks[i].href + '?darkmode';
-          var split_href = allLinks[i].href.split('#');
-          allLinks[i].href = [split_href[0] + '?darkmode'].concat(
-            split_href.slice(1, split_href.length)).join('#');
-        }
-      }
-      document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
-      document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-sun");
-      document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
-    }
-    
-    const allCodes = document.getElementsByTagName("code");
-    for (let i = 0; i < allCodes.length; i++) {
-      if (darkMode) {
-        allCodes[i].style.setProperty("background-color", "#1d161b");
-      }
-      else {
-        allCodes[i].style.setProperty("background-color", "#f9f2f4");
-      }
-    }
-
-      // it's important for this to come after internal links have '?darkmode' added
-      // otherwise the switch in the nav menu to turn on light mode won't work!  
-
-    document.getElementById('colorChanger').href=lightModeLink; 
-      
-    // sets nav switcher to allow dark mode to be enabled 
-
-    if (darkMode === false) {
-      document.getElementById('colorChanger').href=darkModeLink;
-      document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-moon");
-      document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
-      document.getElementsByTagName("label")[0].style="background-color: #fff; color: #333; border-color: #333";
-    }
-
-    fixSideBar();
+    // these variables create the URL for switcher in the nav menu
+    waitForEl("#CSS", fixSideBar);
+    waitForEl(".post-content", initSwitch);
     </script>
 
 </html>

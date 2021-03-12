@@ -10,29 +10,71 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+  <meta property="og:image" content="{{ site.baseurl }}/img/miniature.jpg">
+  <meta name="twitter:image" content="{{ site.baseurl }}/img/miniature.jpg">
+  <link rel="preload" href="{{ site.baseurl }}/style.css" as="style">
+  <link rel="preload" href="{{ site.baseurl }}/style.dark.css" as="style">
   <link rel="stylesheet" id="CSS" href="{{ site.baseurl }}/style.css">
   <script type="text/javascript">
 
   // looks for the ?darkmode parameter 
   // sets global variable darkMode to true or false
 
-  const enteredURL = window.location.href;
-  if (enteredURL.includes('?darkmode')) {
-    var darkMode = true; 
-  } else {
-    var darkMode = false;
+  function lightSwitch() {
+    if (window.localStorage.getItem("dark") == "true") {
+      window.localStorage.setItem("dark", false);
+      lightMode();
+    }
+    else {
+      window.localStorage.setItem("dark", true);
+      darkMode();
+    }
   }
 
-  // loop through links on page to add '?darkmode' to internal links 
-    
-  if (darkMode) {
+  function initSwitch() {
+    const hours = new Date().getHours();
+    if (window.localStorage.getItem("dark_init") == null) {
+      if (hours > 6 && hours < 20) {
+        window.localStorage.setItem("dark_init", true);
+        window.localStorage.setItem("dark", false);
+        lightMode();
+      }
+      else {
+        window.localStorage.setItem("dark_init", true);
+        window.localStorage.setItem("dark", true);
+        darkMode();
+      }
+    }
+    else {
+      if (window.localStorage.getItem("dark") == "true") {
+        darkMode();
+      }
+      else {
+        lightMode();
+      }
+    }
+  }
+
+  function darkMode() {
     document.getElementById('CSS').href="/style.dark.css";
+    document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-sun");
+    document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
+    document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
+    const allCodes = document.getElementsByTagName("code");
+    for (let i = 0; i < allCodes.length; i++) {
+      allCodes[i].style.setProperty("background-color", "#1d161b");
+    }
   }
-    
-  // sets nav switcher to allow dark mode to be enabled 
 
-  if (darkMode === false) {
+  function lightMode() {
     document.getElementById('CSS').href="/style.css";
+    document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-moon");
+    document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
+    document.getElementsByTagName("label")[0].style="background-color: #fff; color: #333; border-color: #333";
+    const allCodes = document.getElementsByTagName("code");
+    for (let i = 0; i < allCodes.length; i++) {
+      allCodes[i].style.setProperty("background-color", "#f9f2f4");
+    }
   }
 
   function resizeSideBar() {
@@ -61,6 +103,16 @@
       document.getElementsByClassName("sidebar")[0].style.position = "";
     }
   }
+
+  var waitForEl = function(selector, callback) {
+    if (jQuery(selector).length) {
+      callback();
+    } else {
+      setTimeout(function() {
+        waitForEl(selector, callback);
+      }, 100);
+    }
+  };
 
   window.onresize = fixSideBar;
   </script>

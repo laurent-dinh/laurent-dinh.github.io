@@ -7,10 +7,29 @@ post_url: real-nvp-visualization
 ---
 
 {::nomarkdown}
+<script src='/js/wheelzoom.js'></script>
 <style type="text/css">
   {% include real_nvp_visualization.css %}
+
+
+.post{
+  min-width: 80%;
+  margin-right: auto;
+}
+
+@media screen and (min-width:769px) {
+  .post {
+    padding-left: 180px;
+    min-width: calc(80% - 180px);
+  }
+}
+
+@media(max-width:768px) {
+  .post {
+    margin-left: auto;
+  }
+}
 </style>
-<script src='/js/wheelzoom.js'></script>
 {:/nomarkdown}
 
 This post is a visualization page for my recent on generative modelling, [*Density estimation using Real NVP*]({{ site.baseurl }}/reports#density-estimation-using-real-nvp), done in collaboration with [Google Brain](https://research.google.com/teams/brain/) that I will present during the [NIPS Deep Learning Symposium 2016](https://sites.google.com/site/nips2016deeplearnings/).
