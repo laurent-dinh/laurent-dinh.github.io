@@ -641,7 +641,7 @@
     dur="0.68977530353517s"
     begin="clicker-end.begin + 0s"
     end="clicker-end.end"
-    values="3.900000;0;0"
+    values="0;0;0"
     keyTimes="0.0;0.001;1.0"
     
     fill="freeze"
@@ -680,7 +680,7 @@
     dur="0.2857142857142857s"
     begin="clicker-end.begin + 0s"
     end="clicker-end.end"
-    values="3.900000;0;0"
+    values="0;0;0"
     keyTimes="0.0;0.001;1.0"
     
     fill="freeze"
@@ -719,7 +719,7 @@
     dur="0.9163162231961565s"
     begin="clicker-end.begin + 0s"
     end="clicker-end.end"
-    values="3.900000;0;0"
+    values="0;0;0"
     keyTimes="0.0;0.001;1.0"
     
     fill="freeze"
@@ -745,7 +745,7 @@
     dur="0.9999999999999999s"
     begin="clicker-end.begin + 0s"
     end="clicker-end.end"
-    values="3.900000;0;0"
+    values="0;0;0"
     keyTimes="0.0;0.001;1.0"
     
     fill="freeze"

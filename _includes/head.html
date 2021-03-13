@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-  <meta property="og:image" content="{{ site.baseurl }}/img/miniature.jpg">
-  <meta name="twitter:image" content="{{ site.baseurl }}/img/miniature.jpg">
+  <meta property="og:image" content="{{ site.url }}/img/miniature.JPG">
+  <meta name="twitter:image" content="{{ site.url }}/img/miniature.JPG">
   <link rel="preload" href="{{ site.baseurl }}/style.css" as="style">
   <link rel="preload" href="{{ site.baseurl }}/style.dark.css" as="style">
   <link rel="stylesheet" id="CSS" href="{{ site.baseurl }}/style.css">
@@ -59,10 +59,22 @@
     document.getElementById('CSS').href="/style.dark.css";
     document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-sun");
     document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
+    if (document.getElementById('logo_sign') != null) {
+      document.getElementById('logo_sign').setAttribute("data", "{{ site.url }}/img/logo_reac_dark.svg");
+    }
+    if (document.getElementById('logo_static') != null) {
+      document.getElementById('logo_static').setAttribute("src", "{{ site.url }}/img/logo_static_dark.svg");
+    }
     document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
     const allCodes = document.getElementsByTagName("code");
     for (let i = 0; i < allCodes.length; i++) {
       allCodes[i].style.setProperty("background-color", "#1d161b");
+    }
+    if (window.location.href.includes('/cv')) {
+      const allLinks = document.getElementsByClassName("content")[0].getElementsByTagName("a");
+      for (let i = 0; i < allLinks.length; i++) {
+        allLinks[i].style.color = "#666666";
+      }
     }
   }
 
@@ -70,10 +82,22 @@
     document.getElementById('CSS').href="/style.css";
     document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-moon");
     document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
+    if (document.getElementById('logo_sign') != null) {
+      document.getElementById('logo_sign').setAttribute("data", "{{ site.url }}/img/logo_reac.svg");
+    }
+    if (document.getElementById('logo_static') != null) {
+      document.getElementById('logo_static').setAttribute("src", "{{ site.url }}/img/logo_static.svg");
+    }
     document.getElementsByTagName("label")[0].style="background-color: #fff; color: #333; border-color: #333";
     const allCodes = document.getElementsByTagName("code");
     for (let i = 0; i < allCodes.length; i++) {
       allCodes[i].style.setProperty("background-color", "#f9f2f4");
+    }
+    if (window.location.href.includes('/cv')) {
+      const allLinks = document.getElementsByClassName("content")[0].getElementsByTagName("a");
+      for (let i = 0; i < allLinks.length; i++) {
+        allLinks[i].style.color = "#333333";
+      }
     }
   }
 
@@ -90,13 +114,13 @@
   function fixSideBar() {
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    var bottom_bar = 650; 
+    var bottom_bar = 630; 
     // document.getElementsByClassName(
     //   "sidebar")[0].getElementsByTagName(
     //   "p")[3].getBoundingClientRect()["y"];
 
     resizeSideBar();
-    if (bottom_bar < vh && vw > 768) {
+    if (bottom_bar < vh) {
       document.getElementsByClassName("sidebar")[0].style.position = "fixed";
     }
     else {

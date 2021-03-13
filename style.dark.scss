@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /* ------------ Core Style -------------- */
 
@@ -64,12 +64,12 @@ th.title {
 }
 
 input[data-function*='swipe'] {
-  position: absolute;
+  position: fixed;
   opacity: 0;
 }
 
 label[data-function*='swipe'] {
-  position: absolute;
+  position: fixed;
   color: #464646;
   top: 30px;
   left: 30px;
@@ -84,13 +84,13 @@ label[data-function*='swipe'] {
 
 @media(max-width:768px) {
   input[data-function*='swipe'] {
-    position: absolute;
+    position: fixed;
     opacity: 0;
     transition: opacity .5s;
   }
 
   label[data-function*='swipe'] {
-    position: absolute;
+    position: fixed;
     color: #464646;
     top: 30px;
     left: 30px;
@@ -198,6 +198,14 @@ label[data-function*='swipe'] {
     font-weight: bold;
 }
 
+.content h4 {
+    font-weight: normal;
+    margin-bottom: 1px;
+    color: #868686;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .content strong {
     color: #868686;
 }
@@ -254,7 +262,10 @@ label[data-function*='swipe'] {
 .sidebar {
   transform: translate3d(0px,0px,0px);
   position: absolute;
-  width: 180px;
+  top: 0;
+  width: 170px;
+  padding-right: 10px;
+  padding-top: 20px;
   color: #777;
   left: 0;
   height: 100%;
@@ -265,6 +276,7 @@ label[data-function*='swipe'] {
     }
   };
   background-image: url("{{ site.url }}/img/banner_dark_repeat.svg");
+  background-color: #000000;
   background-size: 60px auto;
   background-position: 7px 0px;
 }
@@ -285,11 +297,6 @@ a[href]:after { content : "" }
 
 
 @media(max-width:768px) {
-  input[data-function*='swipe']:checked ~ .content {
-    transform: translate3d(180px,0px,0px);
-    transition: all .3s;
-  }
-
   input[data-function*='swipe']:checked ~ .sidebar {
     transform: translate3d(0px,0px,0px);
     .menu {
