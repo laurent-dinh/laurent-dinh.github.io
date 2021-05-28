@@ -95,11 +95,11 @@ Research Scientist, [Google Brain](http://g.co/brain)
 
 #### [**Solving ODE with Universal Flows: Approximation Theory for Flow-Based Models**](https://openreview.net/forum?id=cfKpOiUzF)    
 [Chin-Wei&nbsp;Huang](https://www.chinweihuang.com/), Laurent&nbsp;Dinh, [Aaron&nbsp;Courville](https://aaroncourville.wordpress.com/)  
-[*Workshop on Integration of Deep Neural Models and Differential Equations*](http://iclr2020deepdiffeq.rice.edu/) [*(International Conference in Learning Representations 2020)*](https://iclr.cc/Conferences/2020) *(oral)*  
+[*Workshop on Integration of Deep Neural Models and Differential Equations*](http://iclr2020deepdiffeq.rice.edu/) [*(International Conference on Learning Representations 2020)*](https://iclr.cc/Conferences/2020) *(oral)*  
 
 #### [**Discrete Flows: Invertible Generative Models of Discrete Data**](https://arxiv.org/abs/1905.10347)  
 [Dustin&nbsp;Tran](http://dustintran.com/), [Keyon&nbsp;Vafa](http://keyonvafa.com/), [Kumar&nbsp;Krishna&nbsp;Agrawal](https://kumarkrishna.github.io/), Laurent&nbsp;Dinh, [Ben&nbsp;Poole](https://cs.stanford.edu/~poole/)  
-[*Deep Generative Models for Highly Structured Data*](https://deep-gen-struct.github.io/) [*(International Conference in Learning Representations 2019)*](https://iclr.cc/Conferences/2019)  
+[*Deep Generative Models for Highly Structured Data*](https://deep-gen-struct.github.io/) [*(International Conference on Learning Representations 2019)*](https://iclr.cc/Conferences/2019)  
 [*Neural Information Processing Systems 2019*](https://neurips.cc/Conferences/2019)
 
 #### [**Invertible Convolutional Flow**](http://papers.nips.cc/paper/8801-invertible-convolutional-flow)  
@@ -108,12 +108,12 @@ Research Scientist, [Google Brain](http://g.co/brain)
 
 #### [**A RAD approach to deep mixture models**](https://arxiv.org/abs/1903.07714)  
 Laurent&nbsp;Dinh, [Jascha&nbsp;Sohl-Dickstein](http://www.sohldickstein.com/), [Hugo&nbsp;Larochelle](http://www.dmi.usherb.ca/~larocheh/index_en.html), [Razvan&nbsp;Pascanu](https://sites.google.com/view/razp)  
-[*Deep Generative Models for Highly Structured Data*](https://deep-gen-struct.github.io/) [*(International Conference in Learning Representations 2019)*](https://iclr.cc/Conferences/2019)  
+[*Deep Generative Models for Highly Structured Data*](https://deep-gen-struct.github.io/) [*(International Conference on Learning Representations 2019)*](https://iclr.cc/Conferences/2019)  
 
 #### [**VideoFlow: A Flow-Based Generative Model for Video**](https://arxiv.org/abs/1903.01434)  
 [Manoj&nbsp;Kumar](https://manojbits.wordpress.com/), [Mohammad&nbsp;Babaeizadeh](https://scholar.google.ca/citations?user=3Y4egcYAAAAJ), [Dumitru&nbsp;Erhan](http://www.dumitru.ca/), [Chelsea&nbsp;Finn](https://ai.stanford.edu/~cbfinn/), [Sergey&nbsp;Levine](https://people.eecs.berkeley.edu/~svlevine/), Laurent&nbsp;Dinh, [Durk&nbsp;Kingma](http://dpkingma.com/)  
 [*Workshop on Invertible Neural Nets and Normalizing Flows*](https://invertibleworkshop.github.io/INNF_2019/) [*(International Conference on Machine Learning 2019)*](https://icml.cc/Conferences/2019) *(*[*oral*](https://slideslive.com/38917904/videoflow-a-flowbased-generative-model-for-video)*)*  
-[*International Conference in Learning Representations 2020*](https://iclr.cc/Conferences/2020)  
+[*International Conference on Learning Representations 2020*](https://iclr.cc/Conferences/2020)  
 
 #### **Conference ticket allocation via non-uniform random selection to address systemic biases**  
 [Jessica&nbsp;Thompson](http://thompsonj.github.io/about/), Laurent&nbsp;Dinh, [Layla&nbsp;El&nbsp;Asri](https://speakingmachines.com/), [Nicolas&nbsp;Le&nbsp;Roux](http://nicolas.le-roux.name/)  
@@ -125,7 +125,7 @@ Laurent&nbsp;Dinh
 
 #### [**Learning Awareness Models**](https://arxiv.org/abs/1804.06318)  
 [Brandon&nbsp;Amos](http://bamos.github.io/), Laurent&nbsp;Dinh, [Serkan&nbsp;Cabi](https://uk.linkedin.com/in/serkan-cabi-79576968), [Thomas&nbsp;Rothörl](https://uk.linkedin.com/in/thomasrothoerl), [Sergio&nbsp;Gómez&nbsp;Colmenarejo](https://uk.linkedin.com/in/sergio-gómez-colmenarejo-10666131), [Alistair&nbsp;Muldal](https://github.com/alimuldal), [Tom&nbsp;Erez](https://fr.linkedin.com/in/ereztom), [Yuval&nbsp;Tassa](https://www.cs.washington.edu/people/postdocs/tassa), [Nando&nbsp;De&nbsp;Freitas](http://www.cs.ox.ac.uk/people/nando.defreitas/), [Misha&nbsp;Denil](http://mdenil.com)  
-[*International Conference in Learning Representations 2018*](https://iclr.cc/Conferences/2018) *(conference track)*  
+[*International Conference on Learning Representations 2018*](https://iclr.cc/Conferences/2018) *(conference track)*  
 
 #### [**Sharp Minima Can Generalize For Deep Nets**](https://arxiv.org/abs/1703.04933)  
 Laurent&nbsp;Dinh, [Razvan&nbsp;Pascanu](https://sites.google.com/view/razp), [Samy&nbsp;Bengio](http://bengio.abracadoudou.com/), [Yoshua&nbsp;Bengio](https://yoshuabengio.org/)  
@@ -134,7 +134,7 @@ Laurent&nbsp;Dinh, [Razvan&nbsp;Pascanu](https://sites.google.com/view/razp), [S
 #### [**Density estimation using Real NVP**](http://arxiv.org/abs/1605.08803)  
 Laurent&nbsp;Dinh, [Jascha&nbsp;Sohl-Dickstein](http://www.sohldickstein.com/), [Samy&nbsp;Bengio](http://bengio.abracadoudou.com/)  
 [*Deep Learning Symposium*](https://sites.google.com/site/nips2016deeplearnings/) [*(Neural Information Processing Systems 2016)*](https://neurips.cc/Conferences/2016) *(oral)*  
-[*International Conference in Learning Representations 2017*](https://iclr.cc/archive/www/2017) *(conference track)*
+[*International Conference on Learning Representations 2017*](https://iclr.cc/archive/www/2017) *(conference track)*
 
 #### **Deep independence network analysis of structural brain imaging: A simulation study**  
 [Eduardo Castro](http://mialab.mrn.org/lab-members/eduardo-castro.html), [Devon Hjelm](https://rdevon.github.io/), [Sergey Plis](http://www.mrn.org/people/sergey-plis/principal-investigators), Laurent Dinh, [Jessica Turner](http://www.mrn.org/people/jessica-turner/principal-investigators), [Vince Calhoun](http://www.mrn.org/people/http-www.mrn.org-people-vince-calhoun-principal-investigators/principal-investigators)  
@@ -146,11 +146,11 @@ Laurent&nbsp;Dinh, [Jascha&nbsp;Sohl-Dickstein](http://www.sohldickstein.com/), 
 
 #### [**NICE: Non-linear Independent Components Estimation**](http://arxiv.org/abs/1410.8516)  
 Laurent&nbsp;Dinh, [David&nbsp;Krueger](https://mila.quebec/en/person/david-scott-krueger/), [Yoshua&nbsp;Bengio](https://yoshuabengio.org/)  
-[*International Conference in Learning Representations 2015*](https://iclr.cc/archive/www/2015) *(workshop track)*
+[*International Conference on Learning Representations 2015*](https://iclr.cc/archive/www/2015) *(workshop track)*
 
 #### [**Techniques for Learning Binary Stochastic Feedforward Neural Networks**](http://arxiv.org/abs/1406.2989)  
 [Tapani&nbsp;Raiko](http://users.ics.aalto.fi/praiko/), [Mathias&nbsp;Berglund](https://www.tek.fi/fi/uutishuone/tek-120-vuotta/osaajat/mathias-berglund), [Guillaume&nbsp;Alain](https://mila.quebec/en/person/guillaume-alain-2/), Laurent&nbsp;Dinh  
-[*International Conference in Learning Representations 2015*](https://iclr.cc/archive/www/2015) *(conference track)*
+[*International Conference on Learning Representations 2015*](https://iclr.cc/archive/www/2015) *(conference track)*
 
 #### [**Predicting Parameters in Deep Learning**](http://arxiv.org/abs/1306.0543)  
 [Misha&nbsp;Denil](http://mdenil.com), Babak&nbsp;Shakibi, Laurent&nbsp;Dinh, [Marc'Aurelio&nbsp;Ranzato](http://www.cs.toronto.edu/~ranzato/), [Nando&nbsp;De&nbsp;Freitas](http://www.cs.ox.ac.uk/people/nando.defreitas/)  
@@ -213,7 +213,7 @@ Laurent&nbsp;Dinh, [David&nbsp;Krueger](https://mila.quebec/en/person/david-scot
 **Reviewer**  
 - [*International Conference on Machine Learning*](https://icml.cc/)  
 - [*Neural Information Processing Systems*](https://neurips.cc/)  
-- [*International Conference in Learning Representations*](https://iclr.cc/)  
+- [*International Conference on Learning Representations*](https://iclr.cc/)  
 - [*IEEE Transactions on Pattern Analysis and Machine Intelligence*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)  
 - [*Journal of Machine Learning Research*](https://www.jmlr.org/)
 
