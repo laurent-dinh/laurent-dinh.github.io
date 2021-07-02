@@ -368,3 +368,70 @@ a[href]:after { content : "" }
     border-bottom: 1px solid #000;
   }
 }
+
+
+details>summary:before {
+  content : "+ ";
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+details[open]>summary:before {
+  content : "- ";
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.tooltip-inner {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-size: 13px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #fff;
+}
+
+.popover {
+  background-color: #fff;
+  color: #000;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 13px;
+}
+
+.popover a {
+  background-color: #fff;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 13px;
+  color: #8c2323;
+}
+
+.popover.bottom>.arrow:after {
+  border-bottom-color: #fff;
+}
+
+[data-toggle="popover"] {
+  border-bottom: 1px dotted #666;
+}
+
+.citation-print {
+  visibility: hidden;
+}
+
+@media print {
+  [data-toggle="popover"] {
+    border-bottom: 0px dotted #00000000;
+  }
+
+  [data-toggle="popover"]:after {
+    content: " (" attr(alt) ")"
+  }
+
+  .popover {
+    visibility: hidden;
+  }
+
+  .citation-print {
+    visibility: visible;
+  }
+}

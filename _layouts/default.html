@@ -38,6 +38,16 @@
     // these variables create the URL for switcher in the nav menu
     waitForEl("#CSS", fixSideBar);
     waitForEl(".post-content", initSwitch);
+
+    // <span data-toggle="tooltip" data-placement="bottom" title="Some content inside the tooltip!" data-delay='{"hide" : "500"}'>Sample tooltip</span>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+
+    // <span data-toggle="popover" data-placement="bottom" data-content="Some content inside the popover with a <a href='/'>link</a>!" alt="Some content inside the popover with a link!">Clickable popover</span>
+    $(function () {
+        $("[data-toggle='popover']").popover({html:true});
+    });
     </script>
 
 </html>

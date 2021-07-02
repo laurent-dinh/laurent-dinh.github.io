@@ -364,3 +364,66 @@ a[href]:after { content : "" }
     border-bottom: 1px solid #fff;
   }
 }
+
+
+details>summary:before {
+  content : "+ ";
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+details[open]>summary:before {
+  content : "- ";
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.popover {
+  background-color: #000;
+  color: #fff;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 13px;
+}
+
+.popover a {
+  background-color: #000;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 13px;
+  color: #c7254e;
+}
+
+.popover.bottom>.arrow:after {
+  border-bottom-color: #000;
+}
+
+[data-toggle="popover"] {
+  border-bottom: 1px dotted #666;
+}
+
+.citation-print {
+  visibility: hidden;
+}
+
+@media print {
+  [data-toggle="popover"] {
+    border-bottom: 0px dotted #00000000;
+  }
+
+  [data-toggle="popover"]:after {
+    content: " (" attr(alt) ")"
+  }
+
+  .popover {
+    visibility: hidden;
+  }
+
+  .citation-print {
+    visibility: visible;
+  }
+}
