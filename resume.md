@@ -26,6 +26,23 @@ permalink: /cv/
   }
 }
 </style>
+
+<script>
+  darkMode = function() {
+    defaultDarkMode();
+    const allLinks = document.getElementsByClassName("content")[0].getElementsByTagName("a");
+    for (let i = 0; i < allLinks.length; i++) {
+      allLinks[i].style.color = "#666666";
+    }
+  };
+  lightMode = function() {
+    defaultLightMode();
+    const allLinks = document.getElementsByClassName("content")[0].getElementsByTagName("a");
+    for (let i = 0; i < allLinks.length; i++) {
+      allLinks[i].style.color = "#333333";
+    }
+  };
+</script>
 {:/nomarkdown}
 
 <img style="float: right;" id="logo_static" src="{{ site.baseurl }}/img/logo_static.svg" />
@@ -163,7 +180,7 @@ Laurent&nbsp;Dinh, [David&nbsp;Krueger](https://mila.quebec/en/person/david-scot
 #### [**Primer on Normalizing Flows**](https://bit.ly/3hdbtcM)  
 - [*Massachusetts Institute of Technology*](https://mit.edu) ([*Computer Science and Artificial Intelligence Lab*](https://csail.mit.edu/)) (*invited&nbsp;talk*)  
 - *[From Passive to Active: Generative and Reinforcement Learning with Physics](http://www.ipam.ucla.edu/programs/workshops/workshop-i-from-passive-to-active-generative-and-reinforcement-learning-with-physics/)*  [*(Machine Learning for Physics and the Physics of Learning)*](http://www.ipam.ucla.edu/programs/long-programs/machine-learning-for-physics-and-the-physics-of-learning/) ([*invited&nbsp;talk*](https://fast.wistia.net/embed/iframe/9aye5zcg8j))  
-- [*Mila*](https://mila.quebec) (*invited&nbsp;talk*)
+- [*Mila*](https://mila.quebec) ([*invited&nbsp;talk*](https://bluejeans.com/playback/s/oRE5gP8kuhmh3dPFPPfa6hYd43CVYm5mUtVOmmFGkUuBMUNME7tKUf0Di3lz7J7F))
 
 #### [**A RAD approach to deep mixture models**](https://bit.ly/3hdR9YD)  
 - [*Stanford University*](https://stanford.edu) ([*Computer Science Department*](https://cs.stanford.edu/)) (*invited&nbsp;talk*)  

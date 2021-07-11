@@ -55,7 +55,7 @@
     }
   }
 
-  function darkMode() {
+  function defaultDarkMode() {
     document.getElementById('CSS').href="/style.dark.css";
     document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-sun");
     document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_light.svg)";
@@ -68,17 +68,15 @@
     document.getElementsByTagName("label")[0].style="background-color: #000; color: #aaa; border-color: #aaa";
     const allCodes = document.getElementsByTagName("code");
     for (let i = 0; i < allCodes.length; i++) {
-      allCodes[i].style.setProperty("background-color", "#1d161b");
+      allCodes[i].style.setProperty("background-color", "#060D0B");
     }
-    if (window.location.href.includes('/cv')) {
-      const allLinks = document.getElementsByClassName("content")[0].getElementsByTagName("a");
-      for (let i = 0; i < allLinks.length; i++) {
-        allLinks[i].style.color = "#666666";
-      }
+    const allCodeBlocks = document.getElementsByClassName("codeblock");
+    for (let i = 0; i < allCodeBlocks.length; i++) {
+      allCodeBlocks[i].style.setProperty("background-color", "#060D0B");
     }
   }
 
-  function lightMode() {
+  function defaultLightMode() {
     document.getElementById('CSS').href="/style.css";
     document.getElementById('colorChanger').children[0].setAttribute("class", "fas fa-moon");
     document.getElementById('logo').style="background-image: url({{ site.url }}/img/logo_dark.svg)";
@@ -93,13 +91,20 @@
     for (let i = 0; i < allCodes.length; i++) {
       allCodes[i].style.setProperty("background-color", "#f9f2f4");
     }
-    if (window.location.href.includes('/cv')) {
-      const allLinks = document.getElementsByClassName("content")[0].getElementsByTagName("a");
-      for (let i = 0; i < allLinks.length; i++) {
-        allLinks[i].style.color = "#333333";
-      }
+    const allCodeBlocks = document.getElementsByClassName("codeblock");
+    for (let i = 0; i < allCodeBlocks.length; i++) {
+      allCodeBlocks[i].style.setProperty("background-color", "#f9f2f4");
     }
   }
+  // <div class="codeblock">
+  // <code>
+  // def func(<span data-toggle="tooltip" data-placement="bottom" title="That's a standard name...">foo</span>, bar):  <br/>
+  // &numsp;&numsp;return bar
+  // </code>
+  // </div>
+
+  darkMode = function() {defaultDarkMode();};
+  lightMode = function() {defaultLightMode();};
 
   function resizeSideBar() {
     var body = document.body,
