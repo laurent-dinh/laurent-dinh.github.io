@@ -45,6 +45,30 @@
     }
   }
 
+  [data-toggle="tooltip"] {
+    border-bottom: 1px dotted $grey-color;
+  }
+
+  .references a {
+    color: unset;
+  }
+
+  .references code {
+    background: none;
+  }
+
+
+  .references {
+    font-size: smaller;
+    #references {
+      font-size: 26px;
+
+      @include media-query($on-mobile) {
+        font-size: 22px;
+      }
+    }
+  }
+
   h3 {
     font-size: 26px;
 
@@ -99,5 +123,12 @@ div.footnotes {
 
   a {
     color: #330000;
+  }
+}
+
+.katex-display, .katex {
+  @include media-query($on-mobile) {
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 }

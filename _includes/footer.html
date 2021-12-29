@@ -1,65 +1,33 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h4>CONTACT</h4>
-
-        <div class="social-links">
-          {% for contact in site.footer.contact %}
-            <div class="social-link contact-links">
-
-              {% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
-              <img
-                src="{{ contact_icon_path }}"
-                alt="{{ contact.name | downcase }}"
-              />
-              <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
-                {% if contact.value and contact.value != "" and contact.value != nil %}
-                  {{ contact.value }}
-                {% else %}
-                  {{ contact.name }}
-                {% endif %}
-              </a>
-            </div>
-
-          {% endfor %}
-        </div>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <h4>FOLLOW</h4>
-
-        <div class="social-links follow-links">
-          {% for follow in site.footer.follow %}
-            <div class="social-link">
-
-              {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
-              <img
-                src="{{ follow_icon_path }}"
-                alt="{{ follow.name | downcase }}"
-              />
-              <a href="{{ follow.link }}">
-                {% if follow.value and follow.value != "" and follow.value != nil %}
-                  {{ follow.value }}
-                {% else %}
-                  {{ follow.name }}
-                {% endif %}
-              </a>
-            </div>
-
-          {% endfor %}
-        </div>
-      </div>
+      <img data-toggle="tooltip" data-placement="top"
+       title="Paris <br/> <small>©&nbsp;OpenStreetMap contributors</small>"
+       style="height:20px; width:20px;"
+       src="/assets/img/par.png"
+       alt="Paris"\>
+      <img data-toggle="tooltip" data-placement="top"
+       title="Montréal <br/> <small>©&nbsp;OpenStreetMap contributors</small>"
+       style="height:20px; width:20px;" src="/assets/img/mtl.png"
+       alt="Montréal"\>
+      <img data-toggle="tooltip" data-placement="top"
+       title="Moutain View <br/> <small>©&nbsp;OpenStreetMap contributors</small>"
+       style="height:20px; width:20px;" src="/assets/img/mtv.png"
+       alt="Moutain View"\>
 
       {% if site.footer.show_powered_by == true %}
-        <div class="footer-col footer-col-3 powered-by">
+        <div class="footer-col footer-col-3 powered-by" style="right: 0px; position: absolute;">
           <p>
             powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | {{ 'now' | date: "%Y" }}
           </p>
         </div>
       {% endif %}
+      <span style="position: absolute; right: 20px; bottom: -15px; font-size: 50%">© Copyright 2022 Laurent Dinh</span>
+      <img
+        src="/assets/img/logo_dark.svg"
+        alt="Signature"
+        style="right: 0px; position: absolute; width: 65px; margin: 0px 20px 0px 20px;"
+      />
     </div>
   </div>
 </footer>
-
-{% include wechat-widget.html %}

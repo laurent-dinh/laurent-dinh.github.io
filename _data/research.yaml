@@ -1,0 +1,10 @@
+- title: Invertible Models and Normalizing Flows
+  svg: flow_icon
+  link: /resume#invertible-models-and-normalizing-flows-a-retrospective-talk
+  content: Normalizing flows provide a tool to build an expressive and tractable family of probability distributions. Research in this field harness the recent advances in deep learning to design flexible invertible models for probabilistic inference or density estimation.
+- title: Learning Discrete structure
+  svg: mixture_icon
+  content: I am interested in efficient learning of expressive discrete representation including discrete latent variables, sparse models and inference, and mixture modelling.
+- title: Understanding Deep Learning
+  svg: representation_icon
+  content: Despite their empirical success, the extrapolation behavior of deep learning models remain unclear. I am interested in empirical and theoretical insights about and limits of deep learning methods pertaining to generalization, representation learning, and their inductive biases.

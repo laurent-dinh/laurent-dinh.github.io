@@ -1,2 +1,24 @@
-<script type="text/javascript" src="{{ "/assets/js/vendor/cash-4.1.5.min.js" | absolute_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/site.js" | absolute_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/vendor/cash-4.1.5.min.js" }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/site.js" }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" }}"></script>
+
+<script type="text/javascript">
+  // <span data-toggle="tooltip" data-placement="bottom" title="Some content inside the tooltip!" data-delay='{"hide" : "500"}'>Sample tooltip</span>
+  $(function () {
+    $("[data-toggle='tooltip']").tooltip({html:true, trigger:'manual'});
+  });
+  $(function () {
+    $("[data-toggle='tooltip']").on("mouseleave", function () {$(this).tooltip('hide')});
+    $("[data-toggle='tooltip']").on("mouseout", function () {$(this).tooltip('hide')});
+    $("[data-toggle='tooltip']").on("touchend", function () {$(this).tooltip('hide')});
+    $("[data-toggle='tooltip']").on("mouseenter", function () {$(this).tooltip('show')});
+    $("[data-toggle='tooltip']").on("mouseover", function () {$(this).tooltip('show')});
+    $("[data-toggle='tooltip']").on("touchstart", function () {$(this).tooltip('show')});
+  });
+
+  // <span data-toggle="popover" data-placement="bottom" data-content="Some content inside the popover with a <a href='/'>link</a>!" alt="Some content inside the popover with a link!">Clickable popover</span>
+  $(function () {
+    $("[data-toggle='popover']").popover({html:true});
+  });
+</script>

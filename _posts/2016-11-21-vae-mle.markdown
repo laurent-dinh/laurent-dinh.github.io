@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Variational Auto-Encoders Optimize&nbsp;a&nbsp;Joint"
+date:   2016-11-21 19:00:00 -0500
+blurb: "Reparametrization connecting the ELBo and Maximum Likelihood."
+comments: true
+post_url: vae-mle
+---
+
+It is well known from classical literature in variational inference that [*Variational*](https://arxiv.org/abs/1312.6114) [*Auto-Encoders*](https://arxiv.org/abs/1401.4082) optimizes the *Evidence Lower Bound* (*ELBo*), a lower bound on the log-likelihood of the data. I will point out in this blogpost that it also optimizes a joint likelihood.
+
+### Reminder on Variational Auto-Encoders
+
+Given a data space $$ \mathcal{X} $$ and a continuous latent space $$ \mathcal{Z} = \mathbb{R}^{d_{z}} $$, the standard Variational Auto-Encoder aims at learning a directed generative model defined by a gaussian prior $$ p(z) = \mathcal{N}(0, I) $$ and a generator network $$ z \in \mathcal{Z} \mapsto p_{\theta}(X = \cdot \mid z) $$ defining a distribution on a data point $$ x $$ conditioned on a latent variable $$ z $$.
+
+Since optimizing $$ \log\big(p_{\theta}(x)\big) = \log\big(\int_{\mathcal{Z}}{p_{\theta}(x \mid z)p(z)dz}\big) $$ is in general intractable, their inventors chose to rely on a auxiliary distribution called the *approximate posterior* $$ q_{\phi}(z \mid x) $$ to optimize the *ELBo*, a lower bound on the log-likelihood:
+
+$$
+\mathcal{L}_{ELBO}(x) = \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\Big(\frac{p_{\theta}(x \mid z)p(z)}{q_{\phi}(z \mid x)}\Big)\Big] \\
+= \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\big(p_{\theta}(x \mid z)\big)\Big] - KL(q_{\phi}(z \mid x) || p(z)) \leq \log\big(p_{\theta}(x)\big)
+$$
+
+Building a reasonable approximate posterior is called doing approximate inference. Instead of doing approximate inference at every gradient iteration, the standard Variational Auto-Encoder defines $$ q_{\phi}(z \mid x) $$ as a gaussian $$ \mathcal{N}\big(\mu_{\phi}(x), \sigma_{\phi}^{2}(x)\big) $$ through the functions $$ \mu_{\phi} $$ and $$ \sigma_{\phi}^{2} $$ used to amortize inference.
+
+Since the expectation is over a parametrized distribution $$ q(z \mid x) $$, its optimization would normally rely on a high-variance gradient as derived in *REINFORCE*. However the standard Variational Auto-Encoder is able to fully differentiate cost function via the *Reparametrization Trick* by defining a auxiliary standard random variable $$ \epsilon \in \mathbb{R}^{d_{z}} \sim q(\epsilon) = \mathcal{N}(0, I) $$ and, given a data point $$ x $$, redefining the latent variable as $$ z = \mu_{\phi}(x) + \sigma_{\phi}(x) \cdot \epsilon $$.
+
+Please read the original papers for more informations, [*Auto-Encoding Variational Bayes*](https://arxiv.org/abs/1312.6114) and [*Stochastic Backpropagation and Approximate Inference in Deep Generative Models*](https://arxiv.org/abs/1401.4082).
+
+### Optimizing a joint
+
+After some discussions following [my talk at Twitter](https://www.periscope.tv/w/1ypKdAVmbEpGW), I discovered that one under-appreciated fact about Variational Auto-Encoders is that they also optimize the joint log-likelihood $$ p_{\theta}(x, \epsilon) $$.
+
+Variational Auto-Encoders rely on the *Reparametrization Trick*, a straightforward application of the *Change of Variable formula*. According to this formula, if $$ z = g(\epsilon; x) $$ and $$ g(\cdot ; x) $$ is bijective then:
+
+$$ q(z \mid x) = \Big|\det\Big(\frac{\partial g}{\partial \epsilon^{T}}\Big)\Big|^{-1} q(\epsilon) $$
+
+In our case, given a data point $$ x $$, the standard Variational Auto-Encoder algorithm defines a bijective transformation from the auxiliary $$ \epsilon \mapsto z = \mu_{\phi}(x) + \sigma_{\phi}(x) \cdot \epsilon $$ with a Jacobian determinant of $$ \prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)} $$. Therefore, $$ q(z \mid x) = \Big(\prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)}\Big)^{-1}q(\epsilon) $$, which checks with the fact that $$ \mathcal{N}\big(z; \mu_{\phi}(x), \sigma_{\phi}^{2}(x)\big) = \Big(\prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)}\Big)^{-1}\mathcal{N}\Big(\sigma_{\phi}^{-1}(x)\left(z - \mu_{\phi}(x)\Big); 0, I\right) $$. Likewise, $$ p_{\theta}(z \mid x) = \Big(\prod_{i=1}^{d_{z}}{\sigma_{\phi, i}(x)}\Big)^{-1}p_{\theta, \phi}(\epsilon \mid x) $$.
+
+I'll define $$ q(x, \epsilon) = q(x)q(\epsilon) $$ as the true data and auxiliary variable joint distribution and $$ p_{\theta, \phi}(x, \epsilon) $$ as the model distribution. If we manipulate the log-likelihood of $$ (x, \epsilon) \sim q(x)q(\epsilon) $$ according to the model $$ p_{\theta, \phi}(x, \epsilon) $$, we obtain:
+
+$$
+\log\big(p_{\theta, \phi}(x, \epsilon)\big) \\
+= \log\big(p_{\theta}(x)p_{\theta, \phi}(\epsilon \mid x)\big) \\
+= \log\big(p_{\theta}(x)p_{\theta}(z \mid x)\big) + \sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)} \\
+= \log\big(p_{\theta}(x, z)\big) + \sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)} \\
+= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) + \sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)} \\
+= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) \\+ \Big(\sum_{i=1}^{d_z}{\log\big(\sigma_{\phi, i}(x)\big)}\Big) - \log\big(q(\epsilon)\big) + \log\big(q(\epsilon)\big) \\
+= \log\big(p_{\theta}(x \mid z)\big) + \log\big(p(z)\big) - \log\big(q_{\phi}(z \mid x)\big) + \log\big(q(\epsilon)\big)
+$$
+
+Therefore:
+
+$$
+\mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(p_{\theta, \phi}(x, \epsilon)\big)\Big] \\
+= \mathbb{E}_{z \sim q_{\phi}(z \mid x)}\Big[\log\big(p_{\theta}(x \mid z)\big)\Big] - KL\big(q_{\phi}(z \mid x)||p(z)\big) + \mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(q(\epsilon)\big)\Big] \\
+= \mathcal{L}_{ELBO}(x) - H\big(q(\epsilon)\big)
+$$
+
+As $$ H\big(q(\epsilon)\big) $$ is constant, optimizing the Evidence Lower Bound is equivalent in this case with optimizing the expected joint log-likelihood $$ \mathbb{E}_{\epsilon \sim q(\epsilon)}\Big[\log\big(p_{\theta, \phi}(x, \epsilon)\big)\Big] $$.
+
+This observation serves as an interesting *a posteriori* justification for the coupling layer architecture in [NICE]({{ site.baseurl }}/reports#nice-non-linear-independent-components-estimation) and [Real NVP]({{ site.baseurl }}/reports#density-estimation-using-real-nvp) but also highlights the presence of "triangular" pattern (e.g. in the Jacobian of the mapping $$ (x, \epsilon) \mapsto (x, z) $$) in several tractable probablistic generative learning algorithms.
+
+![Triangular Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Illuminati_triangle_eye.png/576px-Illuminati_triangle_eye.png "Corny with that Illuminati"){:width="100px"}
+*Triangular pattern confirmed*
+
+
+
+
+### Acknowledgements
+The motivation for this rewriting comes from discussions with [Hugo Larochelle]({{ site.data.links.larochelle_url }}). This connection was also discussed with my PhD supervisor, [Yoshua Bengio]({{ site.data.links.yoshua_url }}).

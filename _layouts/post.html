@@ -1,6 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   {% include head.html %}
+  <style>
+    .popover {
+      font-size: 80%;
+    }
+
+    @media screen {
+      [data-toggle="popover"], [data-toggle="tooltip"] {
+        white-space: nowrap;
+      }
+    }
+
+    @media print {
+      .post-content {
+        display: block;
+      }
+      .site-header {
+        display: none;
+      }
+      .katex-display, embed {
+        display: block;
+        page-break-inside: avoid;
+      }
+      p {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
 
   <body>
     {% include header.html %}
@@ -15,7 +42,7 @@
               {% include draft-banner.html %}
             {% endif %}
 
-            <h1 class="post-title">
+            <h1 id="title" class="post-title">
             {% if page.headline_formatted_title %}
               {{ page.headline_formatted_title | newline_to_br }}
             {% else %}

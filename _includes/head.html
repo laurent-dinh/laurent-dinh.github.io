@@ -9,7 +9,11 @@
   {% assign page_title = "" %}
   {% if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
   {% if page.title %}
-    {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
+    {% if page.layout == "post" %}
+      {% assign page_title = page_title | append: page.title | append: " | " | append: site.blog_name %}
+    {% else %}
+      {% assign page_title = page_title | append: page.title | append: " | " | append: site.title %}
+    {% endif %}
   {% else %}
     {% assign page_title = site.title %}
   {% endif %}
@@ -27,6 +31,8 @@
   {% assign page_image = site.og_image | prepend: site.baseurl | prepend: site.url %}
   {% if page.og_image %}
     {% assign page_image = site.url + page.og_image %}
+  {% else %}
+    {% assign page_image = "miniature.jpg" | prepend: "/assets/img/" %}
   {% endif %}
 
   {% for follow in site.footer.follow %}
@@ -60,17 +66,39 @@
     <meta property="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
+  <link rel="preload" as="style" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' type='text/css' onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="{{ "/assets/css/bootstrap-theme.min.css" }}" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" as="style" href="{{ "/assets/css/bootstrap.min.css" }}" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap-theme.min.css" }}"/>
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" }}"/>
+    {% if page.layout == "post" %}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    {% endif %}
+  </noscript>
+  <link rel="stylesheet" href="{{ "/assets/css/night.css" }}" type="text/css" id="main-style" media="screen"/>
+  <noscript>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" id="main-style" media="screen"/>
+  </noscript>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" id="main-style" media="print"/>
+  <link rel="alternate stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" title="Light Mode" media="screen  and (prefers-color-scheme: light)"/>
+  <link rel="alternate stylesheet" href="{{ "/assets/css/night.css" }}" type="text/css" title="Night Mode" media="screen  and (prefers-color-scheme: dark)"/>
   <link rel="canonical" href="{{ page_url }}"/>
-  <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
+  <link rel="shortcut icon" href="{{ "/assets/img/logo.ico" }}" type="image/x-icon"/>
 
-  <!-- Google Analytics -->
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', "{{ site.google_analytics }}", "auto");
-    ga('send', "pageview");
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-
+  {% if page.layout == "post" %}
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  {% endif %}
 
 </head>

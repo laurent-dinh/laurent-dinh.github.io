@@ -1,8 +1,6 @@
 ---
 layout: blog
-title: Blog
+title: Thesis by Blogpost
 slug: /blog
 ---
 
-This is an example of a "Blog" page, displaying a list of posts.
-<br />

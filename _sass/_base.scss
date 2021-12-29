@@ -22,6 +22,15 @@ figure {
   -webkit-font-smoothing: antialiased;
 }
 
+::selection {
+  background-color: $lighter-brand-color;
+  color: $text-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /**
  * Basic styling
  */
@@ -100,11 +109,12 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  font-family: "Futura", sans-serif;
+  /* font-family: "Futura", sans-serif; */
+  font-family: $base-font-family;
 }
 
 h4 {
-  font-size: 12px;
+  font-size: $base-font-size;
 }
 
 /**
@@ -113,16 +123,31 @@ h4 {
 a {
   color: $brand-color;
   text-decoration: none;
+  transition: background-size 0.1s linear, color 0.1s linear, background-image 0.1s linear;
+  background-image: linear-gradient($text-color, $text-color);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom 1px center;
   //
   // &:visited {
   //   color: darken($brand-color, 15%);
   // }
 
+  &:focus {
+    color: $brand-color;
+    text-decoration: none;
+    background-size: 100% 1px;
+    background-image: linear-gradient($brand-color, $brand-color);
+  }
+
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
+    background-size: 100% 1px;
+    background-image: linear-gradient($text-color, $text-color);
   }
 }
+
 
 /**
  * Blockquotes
@@ -146,9 +171,13 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  // border: 1px solid $grey-color-light;
+  border-radius: 10px;
+  background-color: rgba(
+    red($lighter-brand-color),
+    blue($lighter-brand-color),
+    green($lighter-brand-color),
+    0.5);
 }
 
 code {
@@ -163,6 +192,7 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+    background-color: transparent;
   }
 }
 
@@ -174,15 +204,15 @@ pre {
   max-width:         calc(700px - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(800px - (#{$spacing-unit}));
-    max-width:         calc(800px - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+  @include media-query($on-mobile) {
+    max-width: -webkit-calc(700px - (#{$spacing-unit}));
+    max-width:         calc(700px - (#{$spacing-unit}));
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
   }
 
   position: relative;
