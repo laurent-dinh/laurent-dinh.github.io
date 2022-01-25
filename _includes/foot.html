@@ -1,6 +1,53 @@
 <script type="text/javascript" src="{{ "/assets/js/vendor/cash-4.1.5.min.js" }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/site.js" }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery.event.special.mouseleave = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("mouseleave", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.mouseout = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("mouseout", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.touchend = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchend", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.mouseenter = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("mouseenter", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.mouseover = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("mouseover", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.touchstart = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.touchmove = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.wheel = {
+    setup: function( _, ns, handle ){
+        this.addEventListener("wheel", handle, { passive: true });
+    }
+};
+jQuery.event.special.mousewheel = {
+    setup: function( _, ns, handle ){
+        this.addEventListener("mousewheel", handle, { passive: true });
+    }
+};
+</script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" }}"></script>
 
 <script type="text/javascript">

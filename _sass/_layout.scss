@@ -28,6 +28,13 @@ html {
   z-index: 10;
 }
 
+.header-placeholder {
+  height: 56px;
+  padding: 0px;
+  margin: 0px;
+  position: static;
+}
+
 .site-title {
   font-size: 26px;
   line-height: 56px;
@@ -187,7 +194,10 @@ html {
 .page-content {
   padding: $spacing-unit 0;
   position: relative;
-  top: 56px;
+  min-height: calc(100vh - 122px);
+/*  @include media-query($on-mobile) {*/
+/*    min-height: calc(90vh - 66px);*/
+/*  }*/
 }
 
 .page-heading {

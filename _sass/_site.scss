@@ -1,6 +1,7 @@
 .profile-pic-wrapper {
   text-align: center;
   float: right;
+  min-width: 167px;
   width: 167px;
   /*border: #ccc 1px solid;*/
   margin-left: 70px;
@@ -13,6 +14,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    max-width: 240px;
+    width: 70%;
     float: none;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -26,6 +29,7 @@
 
 .profile-pic {
   width: 100%;
+  border: $grey-color-light 2px solid;
   border-radius:5%;
 }
 

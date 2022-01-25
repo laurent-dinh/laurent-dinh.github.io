@@ -14,6 +14,11 @@ a {
   color: unset;
 }
 
+h1, h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 code {
   background: none;
   border: none;
@@ -25,13 +30,13 @@ code {
 
 # {{ page.title }}
 
-### Research Guides
-#### Guides on Writing Papers
+## Research Guides
+### Guides on Writing Papers
 - [**Modern myths: Shortcomings in scientific writings**](http://www.principiae.be/pdfs/UGent-X-003-slideshow.pdf) by [Jean-Luc Doumont](https://www.principiae.be/)
 - [**How to write a great research paper**](https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/peyton-jones.pdf) by [Simon Peyton Jones](https://www.microsoft.com/en-us/research/people/simonpj/)
 - [**Through the Eyes of Birds and Frogs: Writing and Surveys in Machine Learning Research**](http://blog.shakirm.com/2020/12/through-the-eyes-of-birds-and-frogs-writing-and-surveys-in-machine-learning-research/) by [Shakir Mohamed](https://shakirm.com/)
 
-#### Perspectives Applicable to Research Process
+### Perspectives Applicable to Research Process
 - [**The Three Golden Rules for Successful Scientific Research**](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD06xx/EWD637.html) by [Edsger W. Dijkstra](https://www.cs.utexas.edu/users/EWD/)
 <!-- - [**You and Your Research**](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) by [Richard Hamming](https://amturing.acm.org/award_winners/hamming_1000652.cfm) -->
 <!-- - [**There Is No Competition**](http://www.thetrudz.com/blog/there-is-no-competition) by [Trudy](http://www.thetrudz.com/) -->
@@ -49,8 +54,8 @@ code {
 <!-- - [**AI and the Everything in the Whole Wide World Benchmark**](https://ml-retrospectives.github.io/neurips2020/camera_ready/18.pdf) by [Deborah I Raji](https://scholar.google.com/citations?hl=en&user=pzw1-J4AAAAJ), [Emily Denton](https://cephaloponderer.com/), [Alex Hanna](https://alex-hanna.com/), [Emily M. Bender](https://faculty.washington.edu/ebender/), [Amandalynne Paullada](http://www.amandalynne.pw/) -->
 <!-- - [**The Values Encoded in Machine Learning Research**](https://arxiv.org/abs/2106.15590) by [Abeba Birhane](https://abebabirhane.github.io/), [Pratyusha Kalluri](https://scholar.google.com/citations?user=n4g6v6kAAAAJ&hl=en), [Dallas Card](https://web.stanford.edu/~dcard/), [William Agnew](https://sites.google.com/cs.washington.edu/william-agnew/home), [Ravit Dotan](https://www.ravitdotan.com/), [Michelle Bao](https://www.linkedin.com/in/michelle-bao) -->
 
-### Libraries and Frameworks
-#### Plotting and Presentations
+## Libraries and Frameworks
+### Plotting and Presentations
 - <a href="https://matplotlib.org/" data-toggle="tooltip" data-placement="bottom" title="A Python plotting library"><strong>Matplotlib</strong></a> [Cheat sheets](https://github.com/matplotlib/cheatsheets)
 - <a href="https://github.com/jwkvam/celluloid" data-toggle="tooltip" data-placement="bottom" title="A library for animations in Matplotlib"><strong>Celluloid</strong></a>
 - [**Animations with Matplotlib**](https://danielmuellerkomorowska.com/2020/06/12/animations-with-matplotlib/) by [Daniel Müller-Komorowska](https://github.com/danielmk)
@@ -61,7 +66,7 @@ code {
 - [**How to Record a Virtual Conference Talk**](https://hackingsemantics.xyz/2021/recording/) by [Anna Rogers](https://annargrs.github.io/)
 
 
-#### Webpages
+### Webpages
 - <span data-toggle="tooltip" data-placement="bottom" title="JS libraries for LaTeX rendering">
   <a href="https://katex.org">
     <strong>KaTeX</strong>
@@ -80,6 +85,11 @@ code {
 </span>
 - <a href="https://github.com/danijar/handout" data-toggle="tooltip" data-placement="bottom" title="Linear and static Python notebooks"><strong>Handout</strong></a> by [Danijar Hafner](https://danijar.com/)
 - [**W3Schools**](https://www.w3schools.com/)
+- <span data-toggle="tooltip" data-placement="bottom" title="Debugging tool for website">
+  <a href="https://pagespeed.web.dev">
+    <strong>PageSpeed Insights</strong>
+  </a>
+</span>
 - <a href="https://css-tricks.com/guide-svg-animations-smil/" data-toggle="tooltip" data-placement="bottom" title="A tutorial for vectorized controllable animations"><strong>A Guide to SVG Animations (SMIL)</strong></a> by [Sara Soueidan](https://www.sarasoueidan.com/)
   - [demo for making](https://gist.github.com/laurent-dinh/8578ed92b2de9de126cc70fb67c48aa2) [the logo](https://laurent-dinh.github.io//img/logo_reac.svg) in my ['About' page](https://laurent-dinh.github.io/)
 <!-- <details markdown="1"> -->
@@ -88,7 +98,9 @@ code {
 <!-- </details> -->
 
 <!---[**MathCha**](https://mathcha.io)-->
-#### LaTeX
+### LaTeX
 - [`arxiv_latex_cleaner`](https://github.com/google-research/arxiv-latex-cleaner)
 - [<span data-toggle="tooltip" data-placement="bottom" title="LaTeX vector graphics libraries">TikZ and PGF</span> **TeXamples**](https://texample.net/tikz/examples/)
 - [**LaTeX templates**](https://github.com/dustinvtran/latex-templates) by [Dustin Tran](http://dustintran.com/)
+
+<br/>

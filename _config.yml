@@ -8,6 +8,7 @@ baseurl: "" # the subpath of the site
 url: "https://laurent-dinh.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile.jpg
 email: lastname.firstname@gmail.com
+twitter_username: laurent_dinh
 blog_name: "Thesis by Blogpost"
 # google_analytics: "UA-121636368-3"
 
@@ -15,15 +16,13 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: News
-      slug: /#news
-    - name: Research
-      slug: /#research-interests
-    - name: Resume
-    - name: Publications
-      slug: /resume#publications-and-preprints
-    - name: Talks
-      slug: /resume#talks
+    # - name: News
+    #   slug: /#news
+    # - name: Resume
+    # - name: Publications
+    #   slug: /resume#publications-and-preprints
+    # - name: Talks
+    #   slug: /resume#talks
     - name: Blog
     - name: Resources
 
@@ -35,9 +34,9 @@ footer:
       value: lastname.firstname@gmail.com
       link: mailto:lastname.firstname@gmail.com
   follow:
-    - name: Twitter
-      logo: fab fa-twitter
-      link: http://twitter.com/laurent_dinh
+    - name: Bluesky
+      logo: fab fa-bluesky
+      link: http://bsky.app/profile/laurentdinh.bsky.social
       username: "@laurent_dinh"
     - name: LinkedIn
       logo: fab fa-linkedin

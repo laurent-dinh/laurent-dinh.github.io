@@ -32,7 +32,7 @@
   {% if page.og_image %}
     {% assign page_image = site.url + page.og_image %}
   {% else %}
-    {% assign page_image = "miniature.jpg" | prepend: "/assets/img/" %}
+    {% assign page_image = "miniature.jpg" | prepend: "/assets/img/" | prepend: site.baseurl | prepend: site.url %}
   {% endif %}
 
   {% for follow in site.footer.follow %}
@@ -55,42 +55,75 @@
   <meta property="og:description" content="{{ page_description }}"/>
   <meta property="og:image" content="{{ page_image }}"/>
 
+  <meta name="og:site_name" content="{{ page_title }}"/>
+  <meta name="og:type" content="{% if page_is_article %}article{% else %}website{% endif %}"/>
+  <meta name="og:url" content="{{ page_url }}"/>
+  <meta name="og:title" content="{{ page_title }}"/>
+  <meta name="og:description" content="{{ page_description }}"/>
+  <meta name="og:image" content="{{ page_image }}"/>
+
+
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:url" content="{{ page_url }}"/>
   <meta property="twitter:title" content="{{ page_title }}"/>
   <meta property="twitter:description" content="{{ page_description }}"/>
   <meta property="twitter:image" content="{{ page_image }}"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="{{ page_url }}"/>
+  <meta name="twitter:title" content="{{ page_title }}"/>
+  <meta name="twitter:description" content="{{ page_description }}"/>
+  <meta name="twitter:image" content="{{ page_image }}"/>
   {% if twitter_username %}
     <meta property="twitter:creator" content="{{ twitter_username }}"/>
     <meta property="twitter:site" content="{{ twitter_username }}"/>
+
+    <meta name="twitter:creator" content="{{ twitter_username }}"/>
+    <meta name="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
 
   <link rel="preload" as="style" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' type='text/css' onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/fontawesome.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/solid.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/brands.min.css" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="{{ "/assets/css/bootstrap-theme.min.css" }}" onload="this.onload=null;this.rel='stylesheet'"/>
   <link rel="preload" as="style" href="{{ "/assets/css/bootstrap.min.css" }}" onload="this.onload=null;this.rel='stylesheet'"/>
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' type='text/css'>
+    <link rel="preload" rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/brands.min.css">
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap-theme.min.css" }}"/>
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" }}"/>
     {% if page.layout == "post" %}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
     {% endif %}
   </noscript>
-  <link rel="stylesheet" href="{{ "/assets/css/night.css" }}" type="text/css" id="main-style" media="screen"/>
+  <script>
+    var main_style = document.createElement('link');
+    main_style.rel = "stylesheet";
+    main_style.type = "text/css";
+    main_style.id = "main-style";
+    main_style.media = "screen";
+    try {
+      var is_dark = (/true/i).test(localStorage.getItem("dark"));
+    }
+    catch(e) {
+      var is_dark = false;
+    }
+    main_style.href = (is_dark
+      ? "/assets/css/night.css"
+      : "/assets/css/main.css");
+    document.head.appendChild(main_style);
+  </script>
   <noscript>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" id="main-style" media="screen"/>
+  <link rel="stylesheet" href="/assets/css/main.css" type="text/css" id="main-style" media="screen"/>
   </noscript>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" id="main-style" media="print"/>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" media="print"/>
   <link rel="alternate stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css" title="Light Mode" media="screen  and (prefers-color-scheme: light)"/>
   <link rel="alternate stylesheet" href="{{ "/assets/css/night.css" }}" type="text/css" title="Night Mode" media="screen  and (prefers-color-scheme: dark)"/>
   <link rel="canonical" href="{{ page_url }}"/>

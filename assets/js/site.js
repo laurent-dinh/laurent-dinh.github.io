@@ -11,6 +11,7 @@
    });
  });
 
+// e-mail reveal
  $("#email-link").on("mouseenter mouseover touchstart", function(event) {
    var w = $("#email-link");
    w.attr("href",
@@ -35,6 +36,7 @@
      .replace("dinh", "lastname"));
  })
 
+// first/third person
  $("#pronouns").on("click", function(event) {
    var third_person = (/third/i).test($("#pronouns").attr("value"));
    $(".change-person").each(function() {
@@ -51,6 +53,7 @@
  });
  $("#pronouns").css({cursor: "pointer"})
 
+// night mode
  function getDarkVariable() {
    try {
      return localStorage.getItem("dark");
@@ -119,6 +122,7 @@
    return input_str.replace(/[^\x00-\x7F]/g,"");
  }
 
+// change tooltip content
  function modifyTooltip(tooltipped_elem, new_text, duration = 1000) {
    try {
      var tooltip_div = document.getElementById(
@@ -132,6 +136,7 @@
    finally {0;}
  }
 
+// delete popovers when clicking outside
  $('body').on('click', function (e) {
      $('[data-toggle="popover"]').each(function () {
          //the 'is' for buttons that trigger popups
