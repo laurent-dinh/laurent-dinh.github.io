@@ -188,6 +188,10 @@ html {
   padding: $spacing-unit 0;
   position: relative;
   top: 56px;
+  min-height: calc(100vh - 66px);
+  @include media-query($on-mobile) {
+    min-height: calc(90vh - 66px);
+  }
 }
 
 .page-heading {
