@@ -1,9 +1,8 @@
-.blog-post-list {
+.blog-post-elem {
+
   .blog-post-date {
     width: 6em;
     color: $grey-color;
-    display: block;
-    float: left;
     margin-right: 10px;
 
     @include media-query($on-mobile) {

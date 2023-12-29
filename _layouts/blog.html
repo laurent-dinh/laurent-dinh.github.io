@@ -15,11 +15,13 @@
             {% for post in site.posts %}
 
               {% if post.draft != true %}
+              <div class="blog-post-elem">
                 <span class="blog-post-date monospace">{{ post.date | date: "%m/%d/%Y" }}</span>
                 <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
                   {{ post.title }}
                 </a>
                 <br />
+              </span>
 
               {% endif %}
 

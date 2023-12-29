@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);
 @charset "utf-8";
 
 // Our variables
@@ -25,7 +25,7 @@ $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
-$on-mobile: 700px;
+$on-mobile: 620px;
 $on-laptop: 800px;
 
 @mixin media-query($device) {
