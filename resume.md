@@ -136,6 +136,10 @@ Machine Learning Researcher
 
 ## **Publications and Preprints**
 
+### `[J2]` [**Data-driven Stochastic Model Updating and Damage Detection with Deep Generative Model**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5026824)  
+[Tairan&nbsp;Wang](https://www.southampton.ac.uk/people/65jfmj/mr-tairan-wang), [Sifeng&nbsp;Bi](https://www.southampton.ac.uk/people/65d565/doctor-sifeng-bi), [Yanlin&nbsp;Zhao](https://scholar.google.com/citations?hl=en&user=5Ap0dSgAAAAJ), Laurent&nbsp;Dinh, [John&nbsp;Mottershead](https://www.liverpool.ac.uk/people/john-mottershead)  
+[*Mechanical Systems and Signal Processing*](https://www.sciencedirect.com/journal/mechanical-systems-and-signal-processing)
+
 ### [**LiDAR: Sensing Linear Probing Performance in Joint Embedding SSL Architectures**](https://arxiv.org/abs/2312.04000)  
 [Vimal&nbsp;Thilak]({{ site.data.links.vimal_url }}), [Chen&nbsp;Huang]({{ site.data.links.chen_huang_url }}), [Omid&nbsp;Saremi]({{ site.data.links.omid_url }}), Laurent&nbsp;Dinh, [Hanlin&nbsp;Goh]({{ site.data.links.hanlin_url }}), [Preetum&nbsp;Nakkiran]({{ site.data.links.preetum_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Etai&nbsp;Littwin]({{ site.data.links.etai_url }})  
 [*International Conference on Learning Representations 2024*]({{ site.data.links.iclr2024_url | prepend: site.data.links.iclr_url }}) *(spotlight)*  
@@ -229,8 +233,8 @@ Laurent&nbsp;Dinh, [David&nbsp;Krueger]({{ site.data.links.dsk_url }}), [Yoshua&
 
 ### [**Primer on Normalizing Flows**](https://bit.ly/3hdbtcM)  
 - [*Massachusetts Institute of Technology*]({{ site.data.links.mit_url }}) ([*Computer Science and Artificial Intelligence Lab*]({{ site.data.links.csail_url }})) (*invited&nbsp;talk*)  
-- *[From Passive to Active: Generative and Reinforcement Learning with Physics]({{ site.data.links.ipam_gen_phy_url }})*  [*(Machine Learning for Physics and the Physics of Learning)*]({{ site.data.links.ipam_ml_phy_url }}) ([*invited&nbsp;talk*](https://fast.wistia.net/embed/iframe/9aye5zcg8j))  
-- [*Mila*]({{ site.data.links.mila_url }}) ([*invited&nbsp;talk*](https://bluejeans.com/playback/s/oRE5gP8kuhmh3dPFPPfa6hYd43CVYm5mUtVOmmFGkUuBMUNME7tKUf0Di3lz7J7F))
+- *[From Passive to Active: Generative and Reinforcement Learning with Physics]({{ site.data.links.ipam_gen_phy_url }})*  [*(Machine Learning for Physics and the Physics of Learning)*]({{ site.data.links.ipam_ml_phy_url }}) ([*invited&nbsp;talk*](https://www.ipam.ucla.edu/programs/workshops/workshop-i-from-passive-to-active-generative-and-reinforcement-learning-with-physics/?tab=schedule))  
+- [*Mila*]({{ site.data.links.mila_url }}) (*invited&nbsp;talk*)
 
 ### [**A RAD approach to deep mixture models**](https://bit.ly/3hdR9YD)  
 - [*Stanford University*]({{ site.data.links.stanford_url }}) ([*Computer Science Department*]({{ site.data.links.cs_stanford_url }})) (*invited&nbsp;talk*)  
@@ -255,9 +259,9 @@ Laurent&nbsp;Dinh, [David&nbsp;Krueger]({{ site.data.links.dsk_url }}), [Yoshua&
 - [*Mila*]({{ site.data.links.mila_url }}) (*tea&nbsp;talk*)
 
 ### [**Density estimation using Real NVP**](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/view)  
-- [*Deep Learning Symposium*]({{ site.data.links.neurips2016_dl_url }}) [*(Neural Information Processing Systems 2016)*]({{ site.data.links.neurips2016_url | prepend: site.data.links.neurips_url }}) ([*invited&nbsp;talk*](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1))  
+- [*Deep Learning Symposium*]({{ site.data.links.neurips2016_dl_url }}) [*(Neural Information Processing Systems 2016)*]({{ site.data.links.neurips2016_url | prepend: site.data.links.neurips_url }}) ([*invited&nbsp;talk*](https://learn.microsoft.com/en-us/shows/neural-information-processing-systems-conference-nips-2016/deep-learning-symposium-session-1))  
 - [*OpenAI*]({{ site.data.links.openai_url }}) (*invited&nbsp;talk*)  
-- [*Twitter*]({{ site.data.links.twitter_url }}) ([*Cortex team*]({{ site.data.links.cortex_url }})) ([*invited&nbsp;talk*](https://www.periscope.tv/w/1ypKdAVmbEpGW))
+- [*Twitter*]({{ site.data.links.twitter_url }}) (*Cortex team*) ([*invited&nbsp;talk*](https://www.periscope.tv/w/1ypKdAVmbEpGW))
 - [*Mila*]({{ site.data.links.mila_url }}) (*tea&nbsp;talk*)
 
 ### [**NICE: Non-linear Independent Components Estimation**](https://docs.google.com/presentation/d/1Q8pFPQD-p9Zxv8AfmLBe2PyWqStOCM3bjFrCZb7hHAo/view)  
