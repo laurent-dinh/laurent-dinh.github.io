@@ -232,6 +232,9 @@ Laurent&nbsp;Dinh, [David&nbsp;Krueger]({{ site.data.links.dsk_url }}), [Yoshua&
 [*International Conference on Learning Representations 2015*]({{ site.data.links.iclr2015_url | prepend: site.data.links.iclr_url }}) *(workshop track)*
 
 ### **Preprints**
+#### `[P2]` [**STARFlow: Scaling Latent Normalizing Flows for High-resolution Image Synthesis**](https://arxiv.org/abs/2506.06276)  
+[Jiatao&nbsp;Gu]({{ site.data.links.jiatao_url }}), [Tianrong&nbsp;Chen]({{ site.data.links.tianrong_url }}), [David&nbsp;Berthelot]({{ site.data.links.berthelot_url }}), [Huangjie&nbsp;Zheng]({{ site.data.links.huangjie_url }}), [Yuyang&nbsp;Wang]({{ site.data.links.yuyang_url }}), [Ruixiang&nbsp;Zhang]({{ site.data.links.ruixiang_url }}), Laurent&nbsp;Dinh, [Miguel&nbsp;Angel&nbsp;Bautista]({{ site.data.links.miguel_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Shuangfei&nbsp;Zhai]({{ site.data.links.shuangfei_url }})  
+
 #### `[P1]` [**Augmented Normalizing Flows: Bridging the Gap Between Generative Flows and Latent Variable Models**](https://arxiv.org/abs/2002.07101)  
 [Chin-Wei&nbsp;Huang]({{ site.data.links.cwh_url }}), Laurent&nbsp;Dinh, [Aaron&nbsp;Courville]({{ site.data.links.courville_url }})
 
