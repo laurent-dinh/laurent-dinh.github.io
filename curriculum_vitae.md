@@ -105,7 +105,10 @@ code {
 [**Bachelor of Engineering**]({{ site.data.links.ecp_curriculum }}), [*École Centrale Paris*]({{ site.data.links.ecp_url }}), Châtenay&nbsp;Malabry,&nbsp;Île-de-France,&nbsp;France
 
 ## **Professional Appointments**
-`2022-now`<code></code>
+`2026-now`<code></code>
+**Research Associate**, [*University of Alberta*]({{ site.data.links.ualberta_cs_url }}), Edmonton,&nbsp;Alberta,&nbsp;Canada  
+
+`2022-2026`
 **Machine Learning Researcher**, [*Apple*]({{ site.data.links.apple_ml_url }}), Cupertino,&nbsp;California,&nbsp;United&nbsp;States  
 
 `2018-2021`
@@ -144,6 +147,15 @@ code {
 
 ## **Publications and Preprints**
 ### **Conference Proceedings**
+
+#### `[C14]` [**STARFlow-V: End-to-End Video Generative Modeling with Normalizing Flows**](https://arxiv.org/abs/2511.20462)  
+[Jiatao&nbsp;Gu]({{ site.data.links.jiatao_url }}), [Ying&nbsp;Shen]({{ site.data.links.yingshen_url }}), [Tianrong&nbsp;Chen]({{ site.data.links.tianrong_url }}), Laurent&nbsp;Dinh, [Yuyang&nbsp;Wang]({{ site.data.links.yuyang_url }}), [Miguel&nbsp;Angel&nbsp;Bautista]({{ site.data.links.miguel_url }}), [David&nbsp;Berthelot]({{ site.data.links.berthelot_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Shuangfei&nbsp;Zhai]({{ site.data.links.shuangfei_url }})  
+[*IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026*]({{ site.data.links.cvpr2026_url | prepend: site.data.links.cvpr_url }})  
+
+#### `[C13]` [**STARFlow: Scaling Latent Normalizing Flows for High-resolution Image Synthesis**](https://arxiv.org/abs/2506.06276)  
+[Jiatao&nbsp;Gu]({{ site.data.links.jiatao_url }}), [Tianrong&nbsp;Chen]({{ site.data.links.tianrong_url }}), [David&nbsp;Berthelot]({{ site.data.links.berthelot_url }}), [Huangjie&nbsp;Zheng]({{ site.data.links.huangjie_url }}) [Yuyang&nbsp;Wang]({{ site.data.links.yuyang_url }}), [Ruixiang&nbsp;Zhang]({{ site.data.links.ruixiang_url }}), Laurent&nbsp;Dinh, [Miguel&nbsp;Angel&nbsp;Bautista]({{ site.data.links.miguel_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Shuangfei&nbsp;Zhai]({{ site.data.links.shuangfei_url }})  
+[*Advances in Neural Information Processing Systems 2025*]({{ site.data.links.neurips2025_url | prepend: site.data.links.neurips_url }}) *(spotlight)*  
+
 #### `[C12]` [**LiDAR: Sensing Linear Probing Performance in Joint Embedding SSL Architectures**](https://arxiv.org/abs/2312.04000)  
 [Vimal&nbsp;Thilak]({{ site.data.links.vimal_url }}), [Chen&nbsp;Huang]({{ site.data.links.chen_huang_url }}), [Omid&nbsp;Saremi]({{ site.data.links.omid_url }}), Laurent&nbsp;Dinh, [Hanlin&nbsp;Goh]({{ site.data.links.hanlin_url }}), [Preetum&nbsp;Nakkiran]({{ site.data.links.preetum_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Etai&nbsp;Littwin]({{ site.data.links.etai_url }})  
 [*International Conference on Learning Representations 2024*]({{ site.data.links.iclr2024_url | prepend: site.data.links.iclr_url }}) *(spotlight)*  
@@ -232,8 +244,8 @@ Laurent&nbsp;Dinh, [David&nbsp;Krueger]({{ site.data.links.dsk_url }}), [Yoshua&
 [*International Conference on Learning Representations 2015*]({{ site.data.links.iclr2015_url | prepend: site.data.links.iclr_url }}) *(workshop track)*
 
 ### **Preprints**
-#### `[P2]` [**STARFlow: Scaling Latent Normalizing Flows for High-resolution Image Synthesis**](https://arxiv.org/abs/2506.06276)  
-[Jiatao&nbsp;Gu]({{ site.data.links.jiatao_url }}), [Tianrong&nbsp;Chen]({{ site.data.links.tianrong_url }}), [David&nbsp;Berthelot]({{ site.data.links.berthelot_url }}), [Huangjie&nbsp;Zheng]({{ site.data.links.huangjie_url }}), [Yuyang&nbsp;Wang]({{ site.data.links.yuyang_url }}), [Ruixiang&nbsp;Zhang]({{ site.data.links.ruixiang_url }}), Laurent&nbsp;Dinh, [Miguel&nbsp;Angel&nbsp;Bautista]({{ site.data.links.miguel_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Shuangfei&nbsp;Zhai]({{ site.data.links.shuangfei_url }})  
+#### `[P2]` [**The Coupling Within: Flow Matching via Distilled Normalizing Flows**](https://arxiv.org/abs/2603.09014)  
+[David&nbsp;Berthelot]({{ site.data.links.berthelot_url }}), [Tianrong&nbsp;Chen]({{ site.data.links.tianrong_url }}), [Jiatao&nbsp;Gu]({{ site.data.links.jiatao_url }}), [Marco&nbsp;Cuturi]({{ site.data.links.cuturi_url }}), [Bhavik&nbsp;Chandna]({{ site.data.links.chandna_url }}), [Michal&nbsp;Klein]({{ site.data.links.michal_klein_url }}), [Josh&nbsp;Susskind]({{ site.data.links.josh_url }}), [Shuangfei&nbsp;Zhai]({{ site.data.links.shuangfei_url }})  
 
 #### `[P1]` [**Augmented Normalizing Flows: Bridging the Gap Between Generative Flows and Latent Variable Models**](https://arxiv.org/abs/2002.07101)  
 [Chin-Wei&nbsp;Huang]({{ site.data.links.cwh_url }}), Laurent&nbsp;Dinh, [Aaron&nbsp;Courville]({{ site.data.links.courville_url }})
@@ -301,7 +313,7 @@ Internship, [*Google&nbsp;Brain*]({{ site.data.links.brain_url }})
 AI Residency, [*Google&nbsp;Brain*]({{ site.data.links.brain_url }})
 
 ### **Session Mentoring**  
-#### [**Women in Machine Learning Workshop**]({{ site.data.links.wiml2020_url }})  
+#### [**Women in Machine Learning Workshop**]({{ site.data.links.wiml_url }})  
 [*Neural Information Processing Systems 2020*]({{ site.data.links.neurips2020_url | prepend: site.data.links.neurips_url }})  
 #### [**ML Collective Social on Open Collaboration in ML Research**]({{ site.data.links.mlc2020_url }})  
 [*Neural Information Processing Systems 2020*]({{ site.data.links.neurips2020_url | prepend: site.data.links.neurips_url }})  
