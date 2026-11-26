@@ -74,18 +74,26 @@ code {
     top: 0px;
   }
   p {
+    -webkit-break-inside: avoid;
     break-inside: avoid;
   }
   h1, h2, h3, h4 {
+    -webkit-break-after: avoid;
     break-after: avoid;
+  }
+  h4 + p {
+    page-break-before: avoid;
+  }
+  p, li {
+    max-width: 75%;
   }
 }
 </style>
 {:/nomarkdown}
 
-<img style="float: right;" id="logo_static" src="{{ "assets/img/logo_static.svg" | prepend: site.baseurl }}" alt="Dinh logo"/>
+# <img style="float: right;" id="logo_static" src="{{ "assets/img/logo_static.svg" | prepend: site.baseurl }}" alt="Dinh logo"/>
 # **Laurent Dinh**
-[Machine Learning Researcher at Apple]({{ site.data.links.apple_ml_url }})  
+[Research Associate at University of Alberta]({{ site.data.links.ualberta_cs_url }})  
 <a id="email-link" href="mailto:{{ site.email }}" class="monospace"><nobr>{{ site.email }}</nobr></a><span class="monospace"> | </span><a href="{{ site.data.links.homepage_url }}" class="monospace"><nobr>{{ site.data.links.homepage_url }}</nobr></a>  
 
 ## **Education**
