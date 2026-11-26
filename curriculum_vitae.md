@@ -93,7 +93,7 @@ code {
 
 # <img style="float: right;" id="logo_static" src="{{ "assets/img/logo_static.svg" | prepend: site.baseurl }}" alt="Dinh logo"/>
 # **Laurent Dinh**
-[Research Associate at University of Alberta]({{ site.data.links.ualberta_cs_url }})  
+[Research Associate at the University of Alberta]({{ site.data.links.ualberta_cs_url }})  
 <a id="email-link" href="mailto:{{ site.email }}" class="monospace"><nobr>{{ site.email }}</nobr></a><span class="monospace"> | </span><a href="{{ site.data.links.homepage_url }}" class="monospace"><nobr>{{ site.data.links.homepage_url }}</nobr></a>  
 
 ## **Education**
